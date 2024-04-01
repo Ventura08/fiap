@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fase 2</title>
+  </head>
+  <body>
+    <script>
+      let nomeCompleto = "";
+      const handleWindowLoad = () => {
+        nomeCompleto = prompt("Digite seu nome completo por favor: ");
+        let mensagem;
+        if (!nomeCompleto) {
+          mensagem = "Você não digitou seu nome completo!";
+        } else {
+          const primeiroNome = nomeCompleto.split(" ")[0];
+          mensagem = `${primeiroNome}, obrigado por acessar nosso site!`;
+        }
+        alert(mensagem);
+      };
+      window.addEventListener("load", handleWindowLoad);
+    </script>
+  </body>
+</html>
