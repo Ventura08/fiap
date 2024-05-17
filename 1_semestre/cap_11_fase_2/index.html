@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fase 2</title>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   </head>
   <body>
-    <script>
-      let nomeCompleto = "";
-      const handleWindowLoad = () => {
-        nomeCompleto = prompt("Digite seu nome completo por favor: ");
-        let mensagem;
-        if (!nomeCompleto) {
-          mensagem = "Você não digitou seu nome completo!";
-        } else {
-          const primeiroNome = nomeCompleto.split(" ")[0];
-          mensagem = `${primeiroNome}, obrigado por acessar nosso site!`;
-        }
-        alert(mensagem);
-      };
-      window.addEventListener("load", handleWindowLoad);
-    </script>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4" style="background-color: red">
+          Fornecimento de água
+        </div>
+        <div class="col-sm-8" style="background-color: blue">
+          Tratamento de esgoto
+        </div>
+      </div>
+    </div>
   </body>
 </html>
