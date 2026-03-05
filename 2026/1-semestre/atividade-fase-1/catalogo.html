@@ -1,0 +1,763 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo — Vinheria Agnello</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bordo: #5c0a1e;
+        --gold: #c5a059;
+        --gold-dark: #a8863c;
+        --bg: #fdfbf7;
+        --text: #2c2c2c;
+        --white: #ffffff;
+        --shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
+        --radius: 10px;
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      html {
+        scroll-behavior: smooth;
+      }
+      body {
+        font-family: "Lato", sans-serif;
+        background: var(--bg);
+        color: var(--text);
+      }
+      h1,
+      h2,
+      h3,
+      .logo-text {
+        font-family: "Playfair Display", serif;
+      }
+
+      /* NAVBAR */
+      nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 18px 6%;
+        background: var(--white);
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.07);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+      }
+      .logo-text {
+        font-size: 22px;
+        color: var(--bordo);
+        font-weight: 700;
+      }
+      .logo-text span {
+        color: var(--gold);
+      }
+      .nav-search {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid #ddd;
+        border-radius: 25px;
+        padding: 8px 16px;
+        background: var(--bg);
+        flex: 0 1 300px;
+      }
+      .nav-search input {
+        border: none;
+        background: transparent;
+        outline: none;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        width: 100%;
+        color: var(--text);
+      }
+      .nav-icons {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+      .nav-icon {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 11px;
+        color: var(--text);
+        cursor: pointer;
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+      .nav-icon:hover {
+        color: var(--bordo);
+      }
+      .nav-icon svg {
+        width: 22px;
+        height: 22px;
+        margin-bottom: 2px;
+      }
+      .badge {
+        background: var(--gold);
+        color: white;
+        font-size: 10px;
+        border-radius: 50%;
+        width: 16px;
+        height: 16px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-left: -8px;
+        margin-top: -14px;
+      }
+
+      /* HERO MINI */
+      .page-hero {
+        background: linear-gradient(135deg, var(--bordo), #8b1a30);
+        color: var(--white);
+        text-align: center;
+        padding: 50px 6%;
+      }
+      .page-hero h1 {
+        font-size: 38px;
+        margin-bottom: 10px;
+      }
+      .page-hero p {
+        color: rgba(255, 255, 255, 0.75);
+        font-size: 16px;
+      }
+
+      /* LAYOUT */
+      .catalog-layout {
+        display: grid;
+        grid-template-columns: 260px 1fr;
+        gap: 30px;
+        padding: 40px 6%;
+        max-width: 1400px;
+        margin: 0 auto;
+      }
+
+      /* SIDEBAR FILTROS */
+      .sidebar {
+        background: var(--white);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        padding: 28px;
+        height: fit-content;
+        position: sticky;
+        top: 80px;
+      }
+      .sidebar h3 {
+        font-size: 18px;
+        color: var(--bordo);
+        margin-bottom: 20px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .filter-group {
+        margin-bottom: 28px;
+      }
+      .filter-group label {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: #888;
+        font-weight: 700;
+        display: block;
+        margin-bottom: 12px;
+      }
+      .filter-chips {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+      }
+      .chip {
+        border: 1.5px solid #ddd;
+        border-radius: 25px;
+        padding: 7px 15px;
+        font-size: 13px;
+        cursor: pointer;
+        transition: all 0.2s;
+        background: var(--bg);
+        font-family: "Lato", sans-serif;
+      }
+      .chip.active {
+        border-color: var(--bordo);
+        background: var(--bordo);
+        color: var(--white);
+      }
+      .chip:hover:not(.active) {
+        border-color: var(--gold);
+        color: var(--gold);
+      }
+      .price-range {
+        width: 100%;
+        accent-color: var(--bordo);
+        cursor: pointer;
+      }
+      .price-display {
+        display: flex;
+        justify-content: space-between;
+        font-size: 13px;
+        color: #888;
+        margin-top: 8px;
+      }
+      .filter-checkbox {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin-bottom: 10px;
+        cursor: pointer;
+        font-size: 14px;
+      }
+      .filter-checkbox input {
+        accent-color: var(--bordo);
+        cursor: pointer;
+        width: 16px;
+        height: 16px;
+      }
+      .btn-bordo {
+        width: 100%;
+        padding: 12px;
+        background: var(--bordo);
+        color: var(--white);
+        border: none;
+        border-radius: var(--radius);
+        font-size: 14px;
+        font-weight: 700;
+        cursor: pointer;
+        font-family: "Lato", sans-serif;
+        transition: background 0.3s;
+      }
+      .btn-bordo:hover {
+        background: #3a0612;
+      }
+
+      /* CONTEÚDO */
+      .catalog-main {
+      }
+      .catalog-toolbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 24px;
+        flex-wrap: wrap;
+        gap: 12px;
+      }
+      .catalog-toolbar p {
+        color: #888;
+        font-size: 14px;
+      }
+      .sort-select {
+        border: 1px solid #ddd;
+        border-radius: var(--radius);
+        padding: 8px 14px;
+        font-family: "Lato", sans-serif;
+        font-size: 14px;
+        background: var(--white);
+        color: var(--text);
+        cursor: pointer;
+        outline: none;
+      }
+      .products-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        gap: 22px;
+      }
+      .product-card {
+        background: var(--white);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+        transition:
+          transform 0.3s,
+          box-shadow 0.3s;
+        cursor: pointer;
+        position: relative;
+      }
+      .product-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 16px 36px rgba(0, 0, 0, 0.12);
+      }
+      .tag-dica {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: var(--gold);
+        color: var(--white);
+        font-size: 11px;
+        padding: 4px 10px;
+        border-radius: 20px;
+        font-weight: 700;
+        z-index: 1;
+      }
+      .product-img {
+        width: 100%;
+        height: 200px;
+        background: #f0ebe4;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 60px;
+      }
+      .product-info {
+        padding: 14px 16px 18px;
+      }
+      .product-type {
+        font-size: 11px;
+        text-transform: uppercase;
+        letter-spacing: 1.5px;
+        color: var(--gold);
+        font-weight: 700;
+        margin-bottom: 4px;
+      }
+      .product-info h3 {
+        font-size: 16px;
+        color: var(--bordo);
+        margin-bottom: 3px;
+      }
+      .product-uva {
+        font-size: 12px;
+        color: #888;
+        margin-bottom: 12px;
+      }
+      .product-footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .product-price {
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--text);
+      }
+      .btn-add {
+        background: var(--bordo);
+        color: var(--white);
+        border: none;
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        font-size: 20px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.3s;
+      }
+      .btn-add:hover {
+        background: var(--gold);
+      }
+      .no-results {
+        text-align: center;
+        padding: 60px;
+        color: #888;
+        grid-column: 1/-1;
+      }
+      .no-results div {
+        font-size: 48px;
+        margin-bottom: 16px;
+      }
+
+      /* TOAST */
+      .toast {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        background: var(--text);
+        color: var(--white);
+        padding: 14px 22px;
+        border-radius: var(--radius);
+        font-size: 14px;
+        display: none;
+        z-index: 999;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+      }
+
+      /* FOOTER */
+      footer {
+        background: var(--bordo);
+        color: rgba(255, 255, 255, 0.75);
+        text-align: center;
+        padding: 30px 6%;
+        font-size: 14px;
+      }
+      footer strong {
+        color: var(--gold);
+      }
+
+      @media (max-width: 900px) {
+        .catalog-layout {
+          grid-template-columns: 1fr;
+        }
+        .sidebar {
+          position: static;
+        }
+        .nav-search {
+          display: none;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <nav>
+      <a href="index.html" class="logo-text" style="text-decoration: none"
+        >Vinheria <span>Agnello</span></a
+      >
+      <div class="nav-search">
+        <svg
+          fill="none"
+          stroke="currentColor"
+          viewBox="0 0 24 24"
+          width="16"
+          height="16"
+        >
+          <circle cx="11" cy="11" r="8" />
+          <path d="m21 21-4.35-4.35" />
+        </svg>
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="Buscar vinhos..."
+          oninput="filtrarProdutos()"
+        />
+      </div>
+      <div class="nav-icons">
+        <a href="index.html" class="nav-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"
+            />
+          </svg>
+          Home
+        </a>
+        <a href="#" class="nav-icon">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"
+            />
+            <circle cx="12" cy="7" r="4" />
+          </svg>
+          Perfil
+        </a>
+        <div class="nav-icon" style="position: relative">
+          <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L5 5H3M7 13l-1.5 6h13"
+            />
+          </svg>
+          <span class="badge" id="cartCount">0</span>
+          Carrinho
+        </div>
+      </div>
+    </nav>
+
+    <!-- HERO MINI -->
+    <div class="page-hero">
+      <h1>🍷 Nosso Catálogo</h1>
+      <p>Explore nossa seleção curada pessoalmente pelo Sr. Giulio</p>
+    </div>
+
+    <!-- LAYOUT -->
+    <div class="catalog-layout">
+      <!-- SIDEBAR -->
+      <aside class="sidebar">
+        <h3>🔍 Filtros</h3>
+
+        <div class="filter-group">
+          <label>Tipo de Vinho</label>
+          <div class="filter-chips">
+            <button
+              class="chip active"
+              onclick="toggleChip(this, 'tipo', 'Todos')"
+            >
+              Todos
+            </button>
+            <button class="chip" onclick="toggleChip(this, 'tipo', 'Tinto')">
+              🍷 Tinto
+            </button>
+            <button class="chip" onclick="toggleChip(this, 'tipo', 'Branco')">
+              🥂 Branco
+            </button>
+            <button class="chip" onclick="toggleChip(this, 'tipo', 'Rosé')">
+              🌸 Rosé
+            </button>
+            <button
+              class="chip"
+              onclick="toggleChip(this, 'tipo', 'Espumante')"
+            >
+              ✨ Espumante
+            </button>
+          </div>
+        </div>
+
+        <div class="filter-group">
+          <label>Faixa de Preço (até R$ <span id="priceVal">500</span>)</label>
+          <input
+            type="range"
+            class="price-range"
+            id="priceRange"
+            min="50"
+            max="500"
+            value="500"
+            oninput="updatePrice(this.value)"
+          />
+          <div class="price-display"><span>R$ 50</span><span>R$ 500</span></div>
+        </div>
+
+        <div class="filter-group">
+          <label>País de Origem</label>
+          <label class="filter-checkbox"
+            ><input type="checkbox" checked onchange="filtrarProdutos()" /> 🇮🇹
+            Itália</label
+          >
+          <label class="filter-checkbox"
+            ><input type="checkbox" checked onchange="filtrarProdutos()" /> 🇦🇷
+            Argentina</label
+          >
+          <label class="filter-checkbox"
+            ><input type="checkbox" checked onchange="filtrarProdutos()" /> 🇨🇱
+            Chile</label
+          >
+          <label class="filter-checkbox"
+            ><input type="checkbox" checked onchange="filtrarProdutos()" /> 🇧🇷
+            Brasil</label
+          >
+          <label class="filter-checkbox"
+            ><input type="checkbox" checked onchange="filtrarProdutos()" /> 🇫🇷
+            França</label
+          >
+          <label class="filter-checkbox"
+            ><input type="checkbox" checked onchange="filtrarProdutos()" /> 🇵🇹
+            Portugal</label
+          >
+        </div>
+
+        <button class="btn-bordo" onclick="limparFiltros()">
+          Limpar Filtros
+        </button>
+      </aside>
+
+      <!-- PRODUTOS -->
+      <main class="catalog-main">
+        <div class="catalog-toolbar">
+          <p id="resultCount">Mostrando <strong>8</strong> vinhos</p>
+          <select class="sort-select" onchange="ordenar(this.value)">
+            <option value="relevancia">Relevância</option>
+            <option value="menor">Menor Preço</option>
+            <option value="maior">Maior Preço</option>
+            <option value="nome">Nome A-Z</option>
+          </select>
+        </div>
+        <div class="products-grid" id="productsGrid"></div>
+      </main>
+    </div>
+
+    <footer>
+      <p>
+        © 2026 <strong>Vinheria Agnello</strong> — Desenvolvido por Grupo 80 ·
+        FIAP
+      </p>
+    </footer>
+
+    <div class="toast" id="toast">🛒 Produto adicionado ao carrinho!</div>
+
+    <script>
+      const produtos = [
+        {
+          id: 1,
+          nome: "Barolo Riserva",
+          uva: "Nebbiolo",
+          pais: "Itália",
+          tipo: "Tinto",
+          preco: 290,
+          emoji: "🍷",
+          dica: true,
+        },
+        {
+          id: 2,
+          nome: "Chardonnay Premium",
+          uva: "Chardonnay",
+          pais: "Chile",
+          tipo: "Branco",
+          preco: 145,
+          emoji: "🥂",
+          dica: false,
+        },
+        {
+          id: 3,
+          nome: "Malbec Reserva",
+          uva: "Malbec",
+          pais: "Argentina",
+          tipo: "Tinto",
+          preco: 180,
+          emoji: "🍷",
+          dica: true,
+        },
+        {
+          id: 4,
+          nome: "Prosecco DOC",
+          uva: "Glera",
+          pais: "Itália",
+          tipo: "Espumante",
+          preco: 130,
+          emoji: "🥂",
+          dica: false,
+        },
+        {
+          id: 5,
+          nome: "Cabernet Sauvignon",
+          uva: "Cabernet",
+          pais: "Chile",
+          tipo: "Tinto",
+          preco: 220,
+          emoji: "🍷",
+          dica: false,
+        },
+        {
+          id: 6,
+          nome: "Rosé de Provence",
+          uva: "Grenache",
+          pais: "França",
+          tipo: "Rosé",
+          preco: 160,
+          emoji: "🌸",
+          dica: true,
+        },
+        {
+          id: 7,
+          nome: "Vinho Verde",
+          uva: "Loureiro",
+          pais: "Portugal",
+          tipo: "Branco",
+          preco: 90,
+          emoji: "🥂",
+          dica: false,
+        },
+        {
+          id: 8,
+          nome: "Pinto Noir Serra Gaúcha",
+          uva: "Pinot Noir",
+          pais: "Brasil",
+          tipo: "Tinto",
+          preco: 195,
+          emoji: "🍷",
+          dica: true,
+        },
+      ];
+
+      let filtroAtivo = { tipo: "Todos", precoMax: 500 };
+      let cartCount = 0;
+
+      function toggleChip(el, filtro, valor) {
+        el.closest(".filter-chips")
+          .querySelectorAll(".chip")
+          .forEach((c) => c.classList.remove("active"));
+        el.classList.add("active");
+        filtroAtivo[filtro] = valor;
+        filtrarProdutos();
+      }
+
+      function updatePrice(val) {
+        document.getElementById("priceVal").textContent = val;
+        filtroAtivo.precoMax = parseInt(val);
+        filtrarProdutos();
+      }
+
+      function filtrarProdutos() {
+        const busca = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
+        const paisSelecionados = Array.from(
+          document.querySelectorAll(".filter-checkbox input:checked"),
+        ).map((el) =>
+          el.closest("label").textContent.trim().split(" ").slice(1).join(" "),
+        );
+
+        let resultado = produtos.filter((p) => {
+          const tipoOk =
+            filtroAtivo.tipo === "Todos" || p.tipo === filtroAtivo.tipo;
+          const precoOk = p.preco <= filtroAtivo.precoMax;
+          const buscaOk =
+            p.nome.toLowerCase().includes(busca) ||
+            p.uva.toLowerCase().includes(busca);
+          return tipoOk && precoOk && buscaOk;
+        });
+        renderProducts(resultado);
+      }
+
+      function ordenar(tipo) {
+        filtrarProdutos();
+      }
+
+      function limparFiltros() {
+        filtroAtivo = { tipo: "Todos", precoMax: 500 };
+        document.getElementById("priceRange").value = 500;
+        document.getElementById("priceVal").textContent = 500;
+        document.getElementById("searchInput").value = "";
+        document.querySelectorAll(".chip").forEach((c, i) => {
+          c.classList.toggle("active", i === 0);
+        });
+        document
+          .querySelectorAll(".filter-checkbox input")
+          .forEach((el) => (el.checked = true));
+        filtrarProdutos();
+      }
+
+      function addToCart(e) {
+        e.stopPropagation();
+        cartCount++;
+        document.getElementById("cartCount").textContent = cartCount;
+        const toast = document.getElementById("toast");
+        toast.style.display = "block";
+        setTimeout(() => (toast.style.display = "none"), 2500);
+      }
+
+      function renderProducts(lista = produtos) {
+        const grid = document.getElementById("productsGrid");
+        document.getElementById("resultCount").innerHTML =
+          `Mostrando <strong>${lista.length}</strong> vinhos`;
+        if (lista.length === 0) {
+          grid.innerHTML = `<div class="no-results"><div>🍷</div><p>Nenhum vinho encontrado com esses filtros.</p></div>`;
+          return;
+        }
+        grid.innerHTML = lista
+          .map(
+            (p) => `
+        <div class="product-card" onclick="window.location='produto.html'">
+          ${p.dica ? '<div class="tag-dica">⭐ Dica do Giulio</div>' : ""}
+          <div class="product-img">${p.emoji}</div>
+          <div class="product-info">
+            <div class="product-type">${p.tipo} · ${p.pais}</div>
+            <h3>${p.nome}</h3>
+            <p class="product-uva">Uva: ${p.uva}</p>
+            <div class="product-footer">
+              <span class="product-price">R$ ${p.preco.toFixed(2).replace(".", ",")}</span>
+              <button class="btn-add" onclick="addToCart(event)">+</button>
+            </div>
+          </div>
+        </div>
+      `,
+          )
+          .join("");
+      }
+
+      renderProducts();
+    </script>
+  </body>
+</html>
