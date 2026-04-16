@@ -1,0 +1,68 @@
+<%@ page pageEncoding="UTF-8" %>
+<%-- navbar.jspf — Shared navigation bar
+     Include with: <%@ include file="/WEB-INF/jspf/navbar.jspf" %>
+     Requires: session attribute "loggedUser" (String) set by login.jsp
+--%>
+<%
+    String _loggedUser = (String) session.getAttribute("loggedUser");
+    String _ctx = request.getContextPath();
+%>
+<nav>
+  <a href="<%= _ctx %>/index.jsp" class="logo-text">Vinheria <span>Agnello</span></a>
+
+  <div class="nav-search">
+    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24" width="16" height="16">
+      <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+    </svg>
+    <input type="text" id="navSearchInput" placeholder="Buscar vinhos, uvas, regiões..."
+           onkeydown="if(event.key==='Enter'){ window.location='<%= _ctx %>/catalogo.jsp?q='+encodeURIComponent(this.value); }"/>
+  </div>
+
+  <div class="nav-icons">
+    <a href="<%= _ctx %>/catalogo.jsp" class="nav-icon">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <rect x="3" y="3" width="7" height="7" rx="1.5" stroke-width="2"/>
+        <rect x="14" y="3" width="7" height="7" rx="1.5" stroke-width="2"/>
+        <rect x="3" y="14" width="7" height="7" rx="1.5" stroke-width="2"/>
+        <rect x="14" y="14" width="7" height="7" rx="1.5" stroke-width="2"/>
+      </svg>
+      Catálogo
+    </a>
+
+    <% if (_loggedUser != null) { %>
+      <span class="nav-icon nav-user-logged">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        <span><%= _loggedUser %></span>
+      </span>
+      <a href="<%= _ctx %>/logout.jsp" class="nav-icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/>
+        </svg>
+        Sair
+      </a>
+    <% } else { %>
+      <a href="<%= _ctx %>/login.jsp" class="nav-icon">
+        <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+        </svg>
+        Login
+      </a>
+    <% } %>
+
+    <a href="javascript:void(0)" class="nav-icon cart-badge" id="navCartIcon" style="cursor:pointer">
+      <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+              d="M3 3h2l.4 2M7 13h10l4-8H5.4m1.6 8L5 5H3M7 13l-1.5 6h13"/>
+      </svg>
+      <span class="badge" id="cartCount">0</span>
+      Carrinho
+    </a>
+  </div>
+</nav>

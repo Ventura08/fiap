@@ -1,0 +1,66 @@
+<%-- db.jspf — Azure SQL connection helper
+     Include with: <%@ include file="/WEB-INF/jspf/db.jspf" %>
+     Provides: getConnection() method and sha256() helper
+--%>
+<%@ page pageEncoding="UTF-8" %>
+<%@ page import="java.sql.*, java.security.MessageDigest, java.nio.charset.StandardCharsets" %>
+<%!
+    /**
+     * Opens a connection to Azure SQL using environment variables:
+     * DB_URL, DB_USER, DB_PASSWORD
+     */
+    private static Connection getConnection() throws Exception {
+        Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
+        String url  = System.getenv("DB_URL");
+        String user = System.getenv("DB_USER");
+        String pass = System.getenv("DB_PASSWORD");
+        if (url == null || url.isEmpty()) {
+            throw new IllegalStateException("DB_URL environment variable not set");
+        }
+        // Azure-style URL has user= and password= embedded — use it directly
+        if (url.contains("user=") && url.contains("password=")) {
+            return DriverManager.getConnection(url);
+        }
+        // Local SQL Server — requires separate DB_USER and DB_PASSWORD
+        if (user == null || user.isEmpty() || pass == null || pass.isEmpty()) {
+            throw new IllegalStateException("DB_USER and DB_PASSWORD must be set (or embed credentials in DB_URL)");
+        }
+        return DriverManager.getConnection(url, user, pass);
+    }
+
+    /**
+     * Returns the SHA-256 hex digest of the input string.
+     * Used for password hashing.
+     */
+    private static String sha256(String input) {
+        try {
+            MessageDigest md = MessageDigest.getInstance("SHA-256");
+            byte[] hash = md.digest(input.getBytes(StandardCharsets.UTF_8));
+            StringBuilder sb = new StringBuilder(64);
+            for (byte b : hash) sb.append(String.format("%02x", b));
+            return sb.toString();
+        } catch (Exception e) {
+            throw new RuntimeException("SHA-256 not available", e);
+        }
+    }
+
+    /**
+     * Returns the emoji for a wine type (fallback when no image_url is set).
+     */
+    private static String wineEmoji(String type) {
+        if (type == null) return "\uD83C\uDF77";
+        switch (type) {
+            case "Branco":    return "\uD83E\uDD42";
+            case "Espumante": return "\uD83E\uDD42";
+            case "Ros\u00E9": return "\uD83C\uDF38";
+            default:          return "\uD83C\uDF77";
+        }
+    }
+
+    /**
+     * Formats a price as Brazilian currency: R$ 290,00
+     */
+    private static String formatPrice(double price) {
+        return String.format("R$ %,.2f", price).replace(",", "X").replace(".", ",").replace("X", ".");
+    }
+%>

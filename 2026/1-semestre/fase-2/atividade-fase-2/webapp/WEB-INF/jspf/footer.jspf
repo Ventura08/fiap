@@ -1,0 +1,196 @@
+<%-- footer.jspf — Shared footer, cart drawer, and shared JS --%>
+<%@ page pageEncoding="UTF-8" %>
+<footer>
+  <p>&copy; 2026 <strong>Vinheria Agnello</strong> &mdash; Todos os direitos reservados.
+     Desenvolvido com &#x2764;&#xFE0F; pela equipe &middot; FIAP</p>
+</footer>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- CART OVERLAY -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<!-- CART DRAWER -->
+<aside class="cart-drawer" id="cartDrawer" aria-label="Carrinho de compras">
+  <div class="cart-drawer-header">
+    <h2>&#x1F6D2; Meu Carrinho</h2>
+    <button class="cart-close" onclick="closeCart()" aria-label="Fechar">&#x2715;</button>
+  </div>
+
+  <div class="cart-items" id="cartItems"></div>
+
+  <div class="cart-empty" id="cartEmpty">
+    <div class="cart-empty-icon">&#x1F6D2;</div>
+    <p>Seu carrinho est&aacute; vazio</p>
+    <a href="catalogo.jsp" class="btn-bordo"
+       style="display:inline-block;text-decoration:none;padding:12px 28px;"
+       onclick="closeCart()">Ver Cat&aacute;logo</a>
+  </div>
+
+  <div class="cart-footer" id="cartFooter" style="display:none">
+    <div class="cart-total">
+      <span class="cart-total-label">Total</span>
+      <span class="cart-total-value" id="cartTotal">R$ 0,00</span>
+    </div>
+    <button class="btn-gold"
+            onclick="alert('Funcionalidade de checkout em breve! \uD83D\uDE0A')">
+      Finalizar Pedido &rarr;
+    </button>
+  </div>
+</aside>
+
+<script>
+// ── Helpers ────────────────────────────────────────────────────────────────
+function _getItems() {
+  try { return JSON.parse(sessionStorage.getItem('cartItems') || '[]'); }
+  catch(e) { return []; }
+}
+function _saveItems(items) {
+  sessionStorage.setItem('cartItems', JSON.stringify(items));
+  var total = items.reduce(function(s, i) { return s + i.qty; }, 0);
+  sessionStorage.setItem('cartCount', String(total));
+  var badge = document.getElementById('cartCount');
+  if (badge) badge.textContent = total;
+}
+function _fmt(val) {
+  return 'R$ ' + parseFloat(val || 0).toFixed(2)
+    .replace('.', ',')
+    .replace(/(\d)(?=(\d{3})+,)/g, '$1.');
+}
+
+// ── Toast ──────────────────────────────────────────────────────────────────
+var _toastTimer;
+function showToast(msg) {
+  var t = document.getElementById('toast');
+  t.textContent = msg;
+  t.classList.add('show');
+  clearTimeout(_toastTimer);
+  _toastTimer = setTimeout(function() { t.classList.remove('show'); }, 2600);
+}
+
+// ── Cart drawer ────────────────────────────────────────────────────────────
+function openCart() {
+  document.getElementById('cartOverlay').classList.add('show');
+  document.getElementById('cartDrawer').classList.add('open');
+  document.body.style.overflow = 'hidden';
+  renderCart();
+}
+function closeCart() {
+  document.getElementById('cartOverlay').classList.remove('show');
+  document.getElementById('cartDrawer').classList.remove('open');
+  document.body.style.overflow = '';
+}
+
+function renderCart() {
+  var items    = _getItems();
+  var itemsEl  = document.getElementById('cartItems');
+  var emptyEl  = document.getElementById('cartEmpty');
+  var footerEl = document.getElementById('cartFooter');
+
+  if (items.length === 0) {
+    itemsEl.innerHTML = '';
+    emptyEl.style.display = 'flex';
+    footerEl.style.display = 'none';
+    return;
+  }
+  emptyEl.style.display = 'none';
+  footerEl.style.display = 'block';
+
+  itemsEl.innerHTML = items.map(function(item, idx) {
+    var thumb = item.imageUrl
+      ? '<img src="' + item.imageUrl + '" alt="' + item.name + '" style="width:56px;height:56px;object-fit:cover;border-radius:8px;"/>'
+      : (item.emoji || '\uD83C\uDF77');
+    return '<div class="cart-item">' +
+      '<div class="cart-item-emoji">' + thumb + '</div>' +
+      '<div class="cart-item-info">' +
+        '<div class="cart-item-name">' + item.name + '</div>' +
+        '<div class="cart-item-price">' + _fmt(item.price) + '</div>' +
+      '</div>' +
+      '<div class="cart-item-qty">' +
+        '<button onclick="cartQty(' + idx + ',-1)">\u2212</button>' +
+        '<span>' + item.qty + '</span>' +
+        '<button onclick="cartQty(' + idx + ',1)">+</button>' +
+      '</div>' +
+      '<button class="cart-item-remove" onclick="cartRemove(' + idx + ')" title="Remover">\u00D7</button>' +
+    '</div>';
+  }).join('');
+
+  var total = items.reduce(function(s, i) { return s + (i.price * i.qty); }, 0);
+  document.getElementById('cartTotal').textContent = _fmt(total);
+}
+
+function cartQty(idx, delta) {
+  var items = _getItems();
+  items[idx].qty = Math.max(1, items[idx].qty + delta);
+  _saveItems(items); renderCart();
+}
+function cartRemove(idx) {
+  var items = _getItems();
+  items.splice(idx, 1);
+  _saveItems(items); renderCart();
+}
+
+// ── addToCart (called from all pages) ────────────────────────────────────
+// @param e        - click event (or null)
+// @param name     - wine name
+// @param price    - price as number
+// @param emoji    - emoji string
+// @param qty      - quantity (default 1)
+// @param imageUrl - product image URL (optional, shows in cart drawer)
+function addToCart(e, name, price, emoji, qty, imageUrl) {
+  if (e) e.stopPropagation();
+  qty   = parseInt(qty)   || 1;
+  price = parseFloat(price) || 0;
+  emoji = emoji || '\uD83C\uDF77';
+  imageUrl = imageUrl || '';
+
+  var items = _getItems();
+  var found = false;
+  for (var i = 0; i < items.length; i++) {
+    if (items[i].name === name) { items[i].qty += qty; found = true; break; }
+  }
+  if (!found) items.push({ name: name, price: price, emoji: emoji, qty: qty, imageUrl: imageUrl });
+  _saveItems(items);
+
+  showToast('\uD83D\uDED2 ' + name + ' adicionado!');
+  // Drawer stays closed — user opens it manually via the cart icon
+}
+
+// ── Bootstrap ──────────────────────────────────────────────────────────────
+(function init() {
+  // Restore badge count on page load
+  var count = parseInt(sessionStorage.getItem('cartCount') || '0');
+  var badge = document.getElementById('cartCount');
+  if (badge) badge.textContent = count;
+
+  // Cart icon → open drawer
+  var cartIcon = document.getElementById('navCartIcon');
+  if (cartIcon) {
+    cartIcon.addEventListener('click', function(e) {
+      e.preventDefault(); openCart();
+    });
+  }
+
+  // Overlay click → close
+  var overlay = document.getElementById('cartOverlay');
+  if (overlay) overlay.addEventListener('click', closeCart);
+
+  // Navbar shadow on scroll
+  var nav = document.querySelector('nav');
+  if (nav) {
+    window.addEventListener('scroll', function() {
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    }, { passive: true });
+  }
+
+  // Product card staggered entrance animation
+  // Uses animation-fill-mode:both so cards stay hidden during delay and visible after end.
+  // This works in real browsers and Puppeteer full-page screenshots alike.
+  var cards = document.querySelectorAll('.product-card');
+  cards.forEach(function(card, i) {
+    card.style.animationDelay = (i * 0.05) + 's';
+    card.classList.add('animate');
+  });
+})();
+</script>
