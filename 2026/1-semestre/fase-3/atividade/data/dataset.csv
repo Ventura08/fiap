@@ -1,0 +1,1001 @@
+id_venda,data_venda,tipo_vinho,produto,safra,preco_unitario,quantidade,desconto_aplicado,canal,regiao_cliente,tipo_cliente,forma_pagamento,valor_total,sucesso_venda
+1,2025-01-08,Branco,Sauvignon Blanc,2018,209.35,9,0.0,Distribuidor,Sul,PF,Boleto,1884.15,1
+2,2026-02-27,Tinto,Cabernet Reserva,2013,97.23,2,0.15,E-commerce,Nordeste,PF,Credito,165.29,1
+3,2024-10-28,Branco,Riesling Doce,2011,68.32,5,0.0,Eventos,Centro-Oeste,PF,Credito,341.6,0
+4,2026-04-03,Branco,Sauvignon Blanc,2003,150.38,6,0.0,Loja Fisica,Sudeste,PF,Credito,902.28,0
+5,2025-12-09,Tinto,Cabernet Reserva,2009,157.85,34,0.1,E-commerce,Sudeste,PJ,Pix,4830.21,1
+6,2024-01-07,Tinto,Tannat Especial,2011,233.56,7,0.0,Distribuidor,Sul,PF,Pix,1634.92,1
+7,2025-02-04,Branco,Sauvignon Blanc,2013,117.75,1,0.0,E-commerce,Nordeste,PF,Debito,117.75,1
+8,2024-12-13,Tinto,Malbec Premium,2007,258.72,11,0.05,Distribuidor,Sudeste,PF,Credito,2703.62,0
+9,2024-12-11,Branco,Sauvignon Blanc,2017,147.76,9,0.0,Distribuidor,Sudeste,PF,Credito,1329.84,1
+10,2025-08-15,Tinto,Malbec Premium,2008,103.67,7,0.0,E-commerce,Sudeste,PF,Debito,725.69,0
+11,2025-08-18,Espumante,Brut Tradicional,2010,174.39,9,0.0,Loja Fisica,Norte,PF,Pix,1569.51,0
+12,2024-06-21,Tinto,Merlot Classico,2018,274.25,1,0.05,Loja Fisica,Sul,PF,Pix,260.54,1
+13,2025-07-07,Branco,Chardonnay Safra,2007,87.46,3,0.0,Loja Fisica,Sudeste,PF,Debito,262.38,1
+14,2026-02-26,Tinto,Malbec Premium,2023,210.22,2,0.15,E-commerce,Sudeste,PF,Credito,357.37,1
+15,2025-02-21,Tinto,Merlot Classico,2007,220.58,11,0.05,Eventos,Sul,PF,Credito,2305.06,1
+16,2026-02-01,Rose,Rose Provence,2006,155.72,2,0.1,Loja Fisica,Sul,PF,Pix,280.3,0
+17,2026-02-18,Tinto,Merlot Classico,2019,298.23,4,0.0,Loja Fisica,Sudeste,PF,Credito,1192.92,0
+18,2025-03-14,Tinto,Merlot Classico,2010,347.94,4,0.2,Loja Fisica,Centro-Oeste,PF,Credito,1113.41,0
+19,2026-01-30,Rose,Rose Provence,2008,82.28,5,0.1,E-commerce,Sudeste,PF,Pix,370.26,1
+20,2024-07-24,Espumante,Moscatel Doce,2014,361.11,5,0.0,Loja Fisica,Nordeste,PF,Credito,1805.55,1
+21,2026-04-07,Branco,Chardonnay Safra,2003,188.76,4,0.0,E-commerce,Sudeste,PF,Credito,755.04,1
+22,2025-05-09,Branco,Riesling Doce,2003,83.51,10,0.2,Loja Fisica,Nordeste,PF,Pix,668.08,1
+23,2025-02-19,Tinto,Cabernet Reserva,2000,229.9,6,0.1,E-commerce,Centro-Oeste,PF,Boleto,1241.46,1
+24,2024-12-22,Tinto,Merlot Classico,2011,291.89,18,0.0,Eventos,Sul,PJ,Pix,5254.02,1
+25,2025-11-09,Rose,Rose Provence,2014,123.63,9,0.0,Loja Fisica,Sul,PF,Pix,1112.67,1
+26,2026-01-08,Branco,Riesling Doce,2019,80.0,10,0.0,E-commerce,Sudeste,PF,Pix,800.0,1
+27,2025-12-02,Tinto,Cabernet Reserva,2006,121.48,8,0.0,Loja Fisica,Sudeste,PJ,Credito,971.84,1
+28,2024-05-28,Tinto,Cabernet Reserva,2007,216.22,10,0.2,Loja Fisica,Sul,PF,Credito,1729.76,0
+29,2024-06-03,Tinto,Malbec Premium,2001,180.88,4,0.05,Loja Fisica,Sudeste,PF,Credito,687.34,1
+30,2024-02-14,Rose,Rose Provence,2023,174.26,11,0.15,Eventos,Sudeste,PJ,Boleto,1629.33,1
+31,2024-04-24,Branco,Riesling Doce,2009,181.52,32,0.0,E-commerce,Sul,PJ,Debito,5808.64,1
+32,2024-12-20,Tinto,Cabernet Reserva,2009,265.15,5,0.0,Loja Fisica,Sudeste,PF,Credito,1325.75,0
+33,2025-02-13,Espumante,Moscatel Doce,2019,255.14,10,0.1,Loja Fisica,Sul,PJ,Pix,2296.26,1
+34,2024-06-21,Branco,Chardonnay Safra,2002,197.89,7,0.0,E-commerce,Nordeste,PF,Debito,1385.23,0
+35,2026-03-27,Tinto,Tannat Especial,2022,148.41,37,0.05,Distribuidor,Sul,PJ,Pix,5216.61,1
+36,2024-05-25,Branco,Chardonnay Safra,2018,211.86,9,0.05,E-commerce,Sul,PF,Debito,1811.4,1
+37,2024-04-11,Espumante,Moscatel Doce,2018,298.08,11,0.0,Loja Fisica,Sudeste,PF,Credito,3278.88,0
+38,2024-08-18,Branco,Sauvignon Blanc,2022,143.2,1,0.0,Loja Fisica,Sudeste,PF,Credito,143.2,0
+39,2026-03-07,Branco,Riesling Doce,2017,240.73,1,0.0,Distribuidor,Sudeste,PF,Boleto,240.73,0
+40,2024-04-13,Branco,Chardonnay Safra,2019,116.12,8,0.05,E-commerce,Sul,PF,Debito,882.51,1
+41,2026-02-20,Tinto,Merlot Classico,2006,305.96,28,0.0,Distribuidor,Sudeste,PJ,Pix,8566.88,0
+42,2025-07-07,Branco,Chardonnay Safra,2003,207.59,5,0.0,Loja Fisica,Centro-Oeste,PF,Credito,1037.95,0
+43,2024-01-31,Branco,Riesling Doce,2005,221.39,11,0.0,Loja Fisica,Sudeste,PF,Pix,2435.29,0
+44,2025-10-19,Espumante,Brut Tradicional,2002,246.4,2,0.1,E-commerce,Nordeste,PF,Credito,443.52,0
+45,2024-05-12,Rose,Rose Provence,2023,149.5,6,0.0,E-commerce,Sudeste,PF,Pix,897.0,1
+46,2026-01-22,Tinto,Cabernet Reserva,2023,203.81,5,0.15,E-commerce,Sudeste,PF,Credito,866.19,1
+47,2024-05-03,Branco,Sauvignon Blanc,2015,238.71,3,0.0,Eventos,Sudeste,PF,Pix,716.13,1
+48,2025-02-07,Tinto,Tannat Especial,2010,244.97,7,0.1,Loja Fisica,Sudeste,PF,Credito,1543.31,1
+49,2024-07-04,Tinto,Tannat Especial,2011,140.91,6,0.05,E-commerce,Sudeste,PF,Credito,803.19,1
+50,2025-07-05,Branco,Sauvignon Blanc,2010,178.94,10,0.0,E-commerce,Sudeste,PJ,Debito,1789.4,1
+51,2026-01-24,Branco,Sauvignon Blanc,2007,219.1,3,0.05,Eventos,Sul,PF,Pix,624.43,1
+52,2025-12-17,Tinto,Tannat Especial,2007,280.53,9,0.0,Loja Fisica,Sudeste,PF,Credito,2524.77,0
+53,2024-11-12,Rose,Rose Provence,2023,199.41,6,0.15,Loja Fisica,Sul,PF,Credito,1016.99,1
+54,2025-08-23,Branco,Chardonnay Safra,2012,91.11,9,0.0,Loja Fisica,Sul,PF,Credito,819.99,0
+55,2025-04-18,Espumante,Moscatel Doce,2009,114.82,10,0.15,Distribuidor,Norte,PF,Credito,975.97,1
+56,2024-05-08,Tinto,Tannat Especial,2007,212.35,3,0.05,Loja Fisica,Centro-Oeste,PF,Credito,605.2,1
+57,2024-07-26,Tinto,Malbec Premium,2018,95.69,9,0.0,Distribuidor,Sul,PF,Pix,861.21,1
+58,2025-12-19,Tinto,Tannat Especial,2021,238.52,18,0.2,E-commerce,Nordeste,PJ,Debito,3434.69,1
+59,2025-03-28,Tinto,Tannat Especial,2004,171.49,17,0.0,Loja Fisica,Sudeste,PJ,Debito,2915.33,1
+60,2025-01-16,Espumante,Moscatel Doce,2016,286.47,2,0.25,Loja Fisica,Sul,PF,Credito,429.71,0
+61,2025-10-09,Tinto,Tannat Especial,2020,110.81,20,0.1,Eventos,Sul,PJ,Pix,1994.58,1
+62,2025-07-10,Branco,Riesling Doce,2017,125.83,11,0.0,Eventos,Norte,PF,Pix,1384.13,1
+63,2025-02-20,Branco,Riesling Doce,2019,76.12,5,0.05,Eventos,Sudeste,PJ,Credito,361.57,0
+64,2025-12-01,Espumante,Brut Tradicional,2016,311.11,11,0.15,Loja Fisica,Sudeste,PF,Credito,2908.88,0
+65,2025-11-12,Branco,Sauvignon Blanc,2000,157.78,5,0.1,Loja Fisica,Sudeste,PF,Pix,710.01,1
+66,2026-02-01,Tinto,Merlot Classico,2020,160.71,31,0.05,E-commerce,Sudeste,PJ,Credito,4732.91,1
+67,2026-01-24,Tinto,Merlot Classico,2019,349.66,5,0.0,Loja Fisica,Sudeste,PF,Pix,1748.3,1
+68,2025-05-04,Tinto,Cabernet Reserva,2021,214.17,6,0.0,Eventos,Sul,PF,Credito,1285.02,1
+69,2024-06-20,Tinto,Malbec Premium,2010,338.99,5,0.15,Loja Fisica,Sudeste,PF,Credito,1440.71,1
+70,2026-02-02,Tinto,Malbec Premium,2017,239.5,39,0.1,Loja Fisica,Sudeste,PJ,Debito,8406.45,1
+71,2024-10-01,Tinto,Malbec Premium,2019,291.63,3,0.05,Loja Fisica,Nordeste,PF,Debito,831.15,1
+72,2025-07-28,Espumante,Moscatel Doce,2013,121.59,9,0.1,Distribuidor,Centro-Oeste,PJ,Credito,984.88,0
+73,2025-01-03,Tinto,Tannat Especial,2005,97.69,1,0.05,Loja Fisica,Centro-Oeste,PF,Credito,92.81,0
+74,2024-02-13,Tinto,Cabernet Reserva,2004,161.56,5,0.0,Loja Fisica,Sudeste,PF,Pix,807.8,1
+75,2024-04-05,Tinto,Malbec Premium,2007,196.46,1,0.15,Distribuidor,Sudeste,PF,Debito,166.99,0
+76,2024-10-01,Tinto,Cabernet Reserva,2007,331.2,9,0.0,Loja Fisica,Sudeste,PF,Credito,2980.8,1
+77,2024-05-08,Branco,Chardonnay Safra,2004,65.94,37,0.0,Loja Fisica,Sudeste,PJ,Credito,2439.78,1
+78,2025-04-29,Tinto,Cabernet Reserva,2014,123.94,6,0.15,E-commerce,Nordeste,PF,Pix,632.09,0
+79,2026-02-20,Tinto,Cabernet Reserva,2019,165.97,30,0.15,E-commerce,Sul,PJ,Credito,4232.24,1
+80,2024-12-18,Tinto,Merlot Classico,2000,124.68,5,0.1,Loja Fisica,Sudeste,PF,Credito,561.06,0
+81,2024-09-26,Branco,Riesling Doce,2016,92.86,8,0.05,Distribuidor,Sul,PF,Credito,705.74,0
+82,2024-01-15,Tinto,Tannat Especial,2021,224.77,2,0.1,Eventos,Sul,PF,Pix,404.59,1
+83,2025-05-20,Tinto,Malbec Premium,2014,142.45,4,0.2,Loja Fisica,Sul,PJ,Credito,455.84,1
+84,2025-04-16,Branco,Chardonnay Safra,2018,246.85,3,0.05,Loja Fisica,Sul,PF,Debito,703.52,1
+85,2025-11-08,Tinto,Cabernet Reserva,2009,264.3,8,0.0,E-commerce,Sudeste,PF,Pix,2114.4,0
+86,2024-06-18,Tinto,Merlot Classico,2017,317.16,10,0.0,Distribuidor,Centro-Oeste,PF,Debito,3171.6,1
+87,2025-09-14,Branco,Sauvignon Blanc,2020,211.64,8,0.0,Distribuidor,Sul,PF,Boleto,1693.12,1
+88,2024-01-20,Branco,Sauvignon Blanc,2009,120.64,7,0.1,Eventos,Sudeste,PF,Pix,760.03,1
+89,2025-05-27,Tinto,Cabernet Reserva,2009,115.4,4,0.0,Eventos,Sudeste,PF,Credito,461.6,0
+90,2026-03-23,Tinto,Cabernet Reserva,2006,134.56,4,0.0,Loja Fisica,Sudeste,PF,Pix,538.24,1
+91,2024-08-08,Tinto,Malbec Premium,2011,109.89,27,0.0,Loja Fisica,Sudeste,PJ,Pix,2967.03,1
+92,2026-01-16,Branco,Chardonnay Safra,2001,86.18,24,0.0,Eventos,Norte,PJ,Boleto,2068.32,0
+93,2025-12-20,Tinto,Tannat Especial,2003,310.02,5,0.05,E-commerce,Sul,PF,Credito,1472.59,0
+94,2024-11-11,Tinto,Tannat Especial,2022,112.58,7,0.2,E-commerce,Nordeste,PF,Credito,630.45,1
+95,2025-12-21,Tinto,Cabernet Reserva,2017,309.86,10,0.2,Loja Fisica,Sudeste,PF,Credito,2478.88,1
+96,2024-07-30,Tinto,Merlot Classico,2018,219.77,3,0.05,Loja Fisica,Sudeste,PJ,Pix,626.34,1
+97,2025-01-04,Tinto,Tannat Especial,2022,124.17,33,0.05,Loja Fisica,Sudeste,PJ,Debito,3892.73,1
+98,2024-01-26,Tinto,Tannat Especial,2011,188.12,1,0.05,Loja Fisica,Centro-Oeste,PF,Debito,178.71,1
+99,2025-11-27,Espumante,Brut Tradicional,2008,105.53,8,0.0,E-commerce,Sudeste,PF,Boleto,844.24,0
+100,2025-09-30,Branco,Chardonnay Safra,2015,60.44,13,0.25,Distribuidor,Sudeste,PJ,Credito,589.29,1
+101,2025-01-24,Tinto,Malbec Premium,2022,166.17,2,0.1,Loja Fisica,Sudeste,PF,Credito,299.11,1
+102,2025-05-25,Branco,Sauvignon Blanc,2016,220.74,1,0.0,E-commerce,Centro-Oeste,PF,Credito,220.74,1
+103,2025-09-29,Rose,Rose Brasileiro,2022,117.62,4,0.1,Eventos,Sul,PF,Credito,423.43,1
+104,2025-09-04,Branco,Chardonnay Safra,2008,137.55,5,0.05,E-commerce,Centro-Oeste,PF,Debito,653.36,1
+105,2025-07-22,Tinto,Malbec Premium,2004,290.1,9,0.2,E-commerce,Sul,PF,Credito,2088.72,1
+106,2024-04-20,Branco,Chardonnay Safra,2021,98.48,11,0.05,Loja Fisica,Sudeste,PF,Pix,1029.12,1
+107,2025-06-03,Espumante,Moscatel Doce,2009,302.48,6,0.0,Loja Fisica,Sul,PF,Boleto,1814.88,1
+108,2025-06-03,Rose,Rose Brasileiro,2013,133.68,34,0.1,E-commerce,Centro-Oeste,PJ,Credito,4090.61,1
+109,2026-02-15,Tinto,Malbec Premium,2018,285.9,39,0.05,Eventos,Nordeste,PJ,Pix,10592.59,1
+110,2025-07-02,Tinto,Merlot Classico,2005,300.34,4,0.2,Loja Fisica,Sudeste,PF,Credito,961.09,1
+111,2024-10-13,Tinto,Cabernet Reserva,2002,185.32,7,0.25,Distribuidor,Nordeste,PF,Pix,972.93,1
+112,2024-12-25,Tinto,Cabernet Reserva,2003,293.5,37,0.0,E-commerce,Centro-Oeste,PJ,Credito,10859.5,0
+113,2024-04-05,Branco,Sauvignon Blanc,2012,190.37,3,0.1,Distribuidor,Sudeste,PF,Debito,514.0,0
+114,2025-03-15,Espumante,Brut Tradicional,2011,221.68,13,0.0,Loja Fisica,Sul,PJ,Credito,2881.84,1
+115,2025-11-01,Tinto,Malbec Premium,2017,296.38,3,0.05,Distribuidor,Nordeste,PF,Credito,844.68,0
+116,2026-01-18,Tinto,Merlot Classico,2001,80.14,6,0.05,Loja Fisica,Sudeste,PF,Credito,456.8,0
+117,2025-07-09,Tinto,Malbec Premium,2019,225.51,3,0.15,Distribuidor,Sudeste,PF,Pix,575.05,1
+118,2025-09-19,Tinto,Merlot Classico,2011,179.33,8,0.0,Loja Fisica,Nordeste,PF,Pix,1434.64,1
+119,2024-04-11,Branco,Riesling Doce,2009,248.17,1,0.0,Loja Fisica,Sudeste,PF,Pix,248.17,0
+120,2024-11-30,Tinto,Tannat Especial,2005,257.14,25,0.0,Distribuidor,Norte,PJ,Credito,6428.5,0
+121,2025-04-13,Branco,Riesling Doce,2014,152.38,11,0.0,Distribuidor,Sul,PF,Credito,1676.18,1
+122,2025-12-04,Branco,Chardonnay Safra,2007,167.18,2,0.1,E-commerce,Sudeste,PF,Debito,300.92,1
+123,2024-06-29,Tinto,Cabernet Reserva,2011,208.54,2,0.2,Distribuidor,Sul,PF,Pix,333.66,1
+124,2025-05-13,Tinto,Malbec Premium,2004,194.14,5,0.0,Loja Fisica,Sul,PF,Credito,970.7,1
+125,2024-09-29,Rose,Rose Provence,2014,96.7,11,0.2,Loja Fisica,Sudeste,PF,Credito,850.96,0
+126,2024-04-01,Tinto,Tannat Especial,2018,301.35,11,0.05,Loja Fisica,Sul,PF,Pix,3149.11,0
+127,2024-12-07,Tinto,Cabernet Reserva,2004,344.23,11,0.05,Loja Fisica,Centro-Oeste,PF,Pix,3597.2,1
+128,2024-11-20,Espumante,Moscatel Doce,2004,122.02,3,0.2,Loja Fisica,Sul,PF,Credito,292.85,1
+129,2024-12-13,Tinto,Merlot Classico,2009,168.9,30,0.05,E-commerce,Sul,PJ,Boleto,4813.65,1
+130,2025-07-14,Tinto,Malbec Premium,2002,124.84,6,0.1,E-commerce,Sudeste,PF,Credito,674.14,1
+131,2025-04-23,Tinto,Tannat Especial,2014,260.62,9,0.0,Distribuidor,Sudeste,PJ,Boleto,2345.58,0
+132,2026-02-25,Tinto,Cabernet Reserva,2013,87.16,11,0.1,E-commerce,Sudeste,PF,Pix,862.88,0
+133,2025-01-31,Tinto,Cabernet Reserva,2008,232.57,11,0.0,Loja Fisica,Nordeste,PF,Pix,2558.27,1
+134,2025-02-26,Branco,Chardonnay Safra,2004,172.91,34,0.2,E-commerce,Norte,PJ,Pix,4703.15,1
+135,2025-11-21,Tinto,Malbec Premium,2010,179.9,36,0.05,E-commerce,Sul,PJ,Debito,6152.58,1
+136,2025-12-13,Branco,Chardonnay Safra,2012,148.1,37,0.1,Loja Fisica,Sudeste,PJ,Credito,4931.73,1
+137,2024-11-16,Branco,Chardonnay Safra,2005,86.53,11,0.0,E-commerce,Sudeste,PF,Debito,951.83,1
+138,2026-03-17,Tinto,Merlot Classico,2015,315.28,24,0.1,E-commerce,Nordeste,PJ,Credito,6810.05,1
+139,2024-01-31,Tinto,Malbec Premium,2016,161.48,10,0.2,E-commerce,Norte,PJ,Credito,1291.84,1
+140,2025-12-13,Espumante,Moscatel Doce,2012,373.88,29,0.05,Loja Fisica,Sudeste,PJ,Credito,10300.39,1
+141,2024-02-23,Tinto,Tannat Especial,2023,105.46,3,0.2,Eventos,Sudeste,PF,Credito,253.1,0
+142,2026-04-10,Rose,Rose Provence,2013,140.65,4,0.2,Distribuidor,Centro-Oeste,PF,Pix,450.08,0
+143,2025-02-14,Branco,Riesling Doce,2002,74.71,2,0.15,E-commerce,Sudeste,PF,Credito,127.01,1
+144,2025-06-05,Espumante,Moscatel Doce,2005,249.88,10,0.2,Loja Fisica,Sudeste,PF,Boleto,1999.04,0
+145,2024-02-11,Tinto,Merlot Classico,2021,225.05,5,0.1,Loja Fisica,Sudeste,PF,Debito,1012.73,1
+146,2025-06-09,Rose,Rose Brasileiro,2005,126.92,6,0.2,Distribuidor,Centro-Oeste,PF,Credito,609.22,1
+147,2025-04-04,Branco,Chardonnay Safra,2010,103.44,2,0.1,Loja Fisica,Sudeste,PF,Pix,186.19,1
+148,2024-06-08,Espumante,Moscatel Doce,2010,398.39,11,0.05,Loja Fisica,Sudeste,PF,Debito,4163.18,1
+149,2024-02-26,Tinto,Tannat Especial,2023,206.63,7,0.2,E-commerce,Sudeste,PF,Credito,1157.13,1
+150,2025-11-30,Tinto,Tannat Especial,2020,250.39,3,0.0,E-commerce,Nordeste,PF,Debito,751.17,1
+151,2026-03-28,Branco,Riesling Doce,2017,147.34,4,0.0,Loja Fisica,Sudeste,PJ,Debito,589.36,1
+152,2024-06-17,Tinto,Malbec Premium,2002,338.13,23,0.0,E-commerce,Sul,PJ,Credito,7776.99,1
+153,2025-03-26,Tinto,Malbec Premium,2008,209.17,9,0.0,Distribuidor,Nordeste,PF,Credito,1882.53,1
+154,2024-04-18,Tinto,Malbec Premium,2018,281.96,3,0.15,E-commerce,Sul,PF,Debito,719.0,1
+155,2024-07-23,Rose,Rose Provence,2005,167.73,8,0.0,Loja Fisica,Sudeste,PF,Credito,1341.84,1
+156,2025-01-08,Tinto,Cabernet Reserva,2022,214.44,1,0.1,Loja Fisica,Sudeste,PF,Pix,193.0,0
+157,2025-06-06,Espumante,Brut Tradicional,2001,94.9,31,0.05,Distribuidor,Centro-Oeste,PJ,Debito,2794.8,1
+158,2025-04-28,Tinto,Malbec Premium,2019,308.92,3,0.25,E-commerce,Nordeste,PF,Credito,695.07,0
+159,2024-09-24,Rose,Rose Provence,2008,142.41,5,0.0,E-commerce,Sudeste,PF,Boleto,712.05,1
+160,2024-02-19,Tinto,Merlot Classico,2004,127.37,27,0.15,Eventos,Sudeste,PJ,Pix,2923.14,1
+161,2024-04-29,Espumante,Moscatel Doce,2023,172.03,4,0.05,E-commerce,Nordeste,PF,Credito,653.71,1
+162,2025-10-22,Tinto,Tannat Especial,2000,234.22,28,0.25,Distribuidor,Sudeste,PJ,Credito,4918.62,1
+163,2025-03-17,Tinto,Tannat Especial,2008,130.99,2,0.0,Distribuidor,Sudeste,PF,Pix,261.98,1
+164,2026-01-03,Tinto,Merlot Classico,2009,329.3,27,0.0,E-commerce,Sul,PJ,Credito,8891.1,1
+165,2024-03-24,Branco,Riesling Doce,2006,211.25,3,0.2,E-commerce,Sudeste,PF,Debito,507.0,0
+166,2024-08-21,Tinto,Merlot Classico,2005,308.6,37,0.0,Loja Fisica,Sudeste,PJ,Credito,11418.2,1
+167,2025-06-28,Tinto,Tannat Especial,2020,141.47,12,0.0,Distribuidor,Sudeste,PJ,Pix,1697.64,1
+168,2025-06-10,Tinto,Cabernet Reserva,2017,199.13,6,0.2,Distribuidor,Sudeste,PJ,Boleto,955.82,1
+169,2025-11-29,Branco,Chardonnay Safra,2012,156.0,4,0.05,E-commerce,Sudeste,PF,Credito,592.8,1
+170,2026-02-16,Branco,Riesling Doce,2004,211.09,9,0.25,Loja Fisica,Sul,PF,Debito,1424.86,0
+171,2026-04-17,Espumante,Brut Tradicional,2002,217.84,3,0.2,Loja Fisica,Sul,PF,Boleto,522.82,1
+172,2024-11-21,Branco,Sauvignon Blanc,2008,175.21,3,0.1,Eventos,Centro-Oeste,PF,Pix,473.07,0
+173,2024-07-06,Tinto,Malbec Premium,2008,313.58,5,0.0,E-commerce,Sul,PF,Credito,1567.9,1
+174,2024-02-13,Espumante,Moscatel Doce,2021,156.94,30,0.05,E-commerce,Sudeste,PJ,Pix,4472.79,1
+175,2024-07-15,Tinto,Tannat Especial,2017,223.54,5,0.05,Loja Fisica,Centro-Oeste,PF,Debito,1061.82,1
+176,2024-06-20,Branco,Chardonnay Safra,2003,244.75,2,0.2,Distribuidor,Nordeste,PF,Debito,391.6,0
+177,2024-05-23,Tinto,Tannat Especial,2023,100.0,1,0.0,Loja Fisica,Sudeste,PF,Credito,100.0,0
+178,2025-10-21,Branco,Chardonnay Safra,2017,145.0,11,0.0,E-commerce,Centro-Oeste,PF,Debito,1595.0,1
+179,2025-11-08,Tinto,Malbec Premium,2007,265.23,8,0.2,Loja Fisica,Sudeste,PF,Pix,1697.47,1
+180,2024-09-18,Branco,Chardonnay Safra,2013,115.07,39,0.05,Loja Fisica,Sul,PJ,Credito,4263.34,1
+181,2025-06-14,Branco,Chardonnay Safra,2001,144.9,7,0.05,Loja Fisica,Sul,PF,Pix,963.59,1
+182,2025-01-10,Tinto,Malbec Premium,2018,207.59,4,0.05,E-commerce,Sudeste,PJ,Debito,788.84,1
+183,2025-02-22,Espumante,Moscatel Doce,2012,239.29,5,0.2,E-commerce,Sul,PF,Credito,957.16,1
+184,2026-03-29,Tinto,Tannat Especial,2000,196.63,7,0.15,E-commerce,Sudeste,PF,Credito,1169.95,0
+185,2025-04-30,Tinto,Cabernet Reserva,2007,253.22,3,0.05,Loja Fisica,Centro-Oeste,PF,Debito,721.68,0
+186,2026-02-09,Tinto,Cabernet Reserva,2005,157.46,32,0.0,E-commerce,Nordeste,PJ,Boleto,5038.72,1
+187,2026-04-25,Branco,Riesling Doce,2022,98.73,5,0.05,Eventos,Sul,PF,Pix,468.97,0
+188,2025-01-09,Tinto,Tannat Especial,2006,166.63,38,0.05,Eventos,Norte,PJ,Pix,6015.34,1
+189,2025-06-25,Tinto,Merlot Classico,2003,130.95,6,0.2,E-commerce,Sul,PF,Credito,628.56,1
+190,2025-10-08,Tinto,Cabernet Reserva,2015,154.26,3,0.0,E-commerce,Sudeste,PF,Credito,462.78,1
+191,2024-01-19,Branco,Riesling Doce,2010,73.64,8,0.15,Distribuidor,Sudeste,PF,Credito,500.75,0
+192,2024-05-31,Tinto,Merlot Classico,2015,275.7,9,0.05,Eventos,Sul,PF,Credito,2357.23,0
+193,2024-09-12,Tinto,Merlot Classico,2008,272.08,2,0.0,E-commerce,Sudeste,PF,Credito,544.16,1
+194,2025-06-03,Branco,Chardonnay Safra,2011,174.65,10,0.0,Distribuidor,Nordeste,PF,Credito,1746.5,1
+195,2025-01-22,Tinto,Merlot Classico,2004,330.98,19,0.0,E-commerce,Sudeste,PJ,Boleto,6288.62,0
+196,2024-01-11,Espumante,Moscatel Doce,2013,114.23,10,0.15,Distribuidor,Norte,PJ,Boleto,970.95,1
+197,2024-12-21,Branco,Sauvignon Blanc,2017,221.31,8,0.05,E-commerce,Sudeste,PF,Credito,1681.96,1
+198,2026-04-05,Tinto,Tannat Especial,2011,334.49,9,0.1,E-commerce,Sudeste,PF,Credito,2709.37,1
+199,2024-11-17,Rose,Rose Brasileiro,2006,160.08,2,0.25,Distribuidor,Sudeste,PF,Boleto,240.12,1
+200,2025-07-27,Tinto,Merlot Classico,2006,170.46,2,0.15,Loja Fisica,Sudeste,PF,Pix,289.78,1
+201,2025-01-14,Rose,Rose Provence,2011,88.41,8,0.0,Eventos,Sul,PF,Pix,707.28,0
+202,2024-08-31,Tinto,Merlot Classico,2006,88.65,3,0.1,Loja Fisica,Sudeste,PF,Debito,239.36,1
+203,2024-04-02,Branco,Riesling Doce,2019,131.79,9,0.05,Loja Fisica,Sudeste,PF,Credito,1126.8,1
+204,2025-03-14,Tinto,Merlot Classico,2022,86.01,10,0.1,Loja Fisica,Sudeste,PF,Pix,774.09,0
+205,2025-11-01,Tinto,Tannat Especial,2010,227.69,16,0.0,E-commerce,Centro-Oeste,PJ,Credito,3643.04,1
+206,2024-01-14,Espumante,Brut Tradicional,2023,237.21,2,0.0,E-commerce,Nordeste,PF,Debito,474.42,1
+207,2024-08-14,Espumante,Moscatel Doce,2012,391.05,9,0.0,E-commerce,Sudeste,PF,Boleto,3519.45,1
+208,2025-01-16,Rose,Rose Provence,2023,94.24,11,0.0,Loja Fisica,Nordeste,PF,Debito,1036.64,1
+209,2024-06-19,Tinto,Merlot Classico,2008,174.19,6,0.1,E-commerce,Sudeste,PF,Credito,940.63,1
+210,2025-12-26,Tinto,Cabernet Reserva,2000,213.54,30,0.0,E-commerce,Sudeste,PJ,Credito,6406.2,1
+211,2024-04-21,Branco,Sauvignon Blanc,2017,248.63,5,0.0,Distribuidor,Centro-Oeste,PF,Pix,1243.15,1
+212,2025-03-29,Tinto,Tannat Especial,2006,90.68,7,0.0,Loja Fisica,Sul,PF,Boleto,634.76,1
+213,2024-01-28,Tinto,Tannat Especial,2008,168.54,11,0.0,Loja Fisica,Sudeste,PF,Credito,1853.94,1
+214,2025-10-05,Tinto,Malbec Premium,2007,288.96,11,0.15,Eventos,Centro-Oeste,PF,Debito,2701.78,0
+215,2025-01-04,Rose,Rose Provence,2002,199.25,6,0.15,Distribuidor,Nordeste,PF,Boleto,1016.17,1
+216,2024-01-30,Branco,Chardonnay Safra,2002,112.43,4,0.05,Distribuidor,Nordeste,PF,Pix,427.23,1
+217,2024-08-13,Tinto,Malbec Premium,2021,195.01,34,0.0,Loja Fisica,Sudeste,PJ,Credito,6630.34,1
+218,2024-08-07,Tinto,Malbec Premium,2009,302.46,7,0.0,E-commerce,Sudeste,PF,Debito,2117.22,0
+219,2026-04-03,Branco,Sauvignon Blanc,2019,170.99,3,0.0,Distribuidor,Sudeste,PF,Credito,512.97,0
+220,2025-04-24,Tinto,Malbec Premium,2001,218.31,1,0.0,E-commerce,Sudeste,PF,Pix,218.31,1
+221,2026-03-08,Tinto,Malbec Premium,2017,199.52,4,0.0,Distribuidor,Sudeste,PF,Debito,798.08,1
+222,2025-01-22,Espumante,Moscatel Doce,2002,378.19,36,0.2,Distribuidor,Sudeste,PJ,Credito,10891.87,1
+223,2025-01-20,Tinto,Merlot Classico,2016,98.13,20,0.0,E-commerce,Sudeste,PJ,Credito,1962.6,1
+224,2025-07-11,Tinto,Merlot Classico,2003,166.44,6,0.0,Loja Fisica,Centro-Oeste,PF,Pix,998.64,1
+225,2024-02-21,Tinto,Tannat Especial,2006,249.28,8,0.0,Loja Fisica,Sudeste,PF,Credito,1994.24,1
+226,2025-10-18,Tinto,Tannat Especial,2021,294.29,7,0.0,Loja Fisica,Sul,PJ,Debito,2060.03,1
+227,2026-04-19,Branco,Sauvignon Blanc,2018,156.46,8,0.1,E-commerce,Sudeste,PF,Credito,1126.51,0
+228,2025-06-05,Branco,Riesling Doce,2013,101.09,6,0.2,Distribuidor,Nordeste,PJ,Credito,485.23,1
+229,2024-06-09,Tinto,Cabernet Reserva,2021,286.34,6,0.0,Loja Fisica,Sul,PF,Credito,1718.04,1
+230,2025-08-25,Espumante,Brut Tradicional,2017,103.38,1,0.0,E-commerce,Sudeste,PF,Credito,103.38,1
+231,2025-10-05,Espumante,Brut Tradicional,2012,223.66,9,0.05,E-commerce,Sudeste,PF,Credito,1912.29,0
+232,2024-03-08,Espumante,Moscatel Doce,2004,326.86,4,0.05,Loja Fisica,Sudeste,PF,Credito,1242.07,0
+233,2024-02-26,Tinto,Tannat Especial,2005,133.49,4,0.05,E-commerce,Sudeste,PF,Boleto,507.26,1
+234,2024-11-16,Branco,Chardonnay Safra,2020,130.22,3,0.05,Distribuidor,Sudeste,PF,Pix,371.13,1
+235,2024-02-28,Tinto,Merlot Classico,2020,305.59,11,0.0,E-commerce,Sudeste,PF,Credito,3361.49,1
+236,2025-12-27,Tinto,Merlot Classico,2011,215.18,10,0.25,Loja Fisica,Sul,PF,Pix,1613.85,1
+237,2024-02-14,Rose,Rose Brasileiro,2006,124.41,9,0.0,E-commerce,Centro-Oeste,PF,Pix,1119.69,1
+238,2024-10-05,Tinto,Malbec Premium,2020,242.57,9,0.0,Loja Fisica,Sudeste,PF,Credito,2183.13,1
+239,2024-07-21,Rose,Rose Provence,2023,75.83,2,0.1,Loja Fisica,Sudeste,PF,Pix,136.49,1
+240,2025-10-05,Branco,Sauvignon Blanc,2006,96.0,11,0.0,Loja Fisica,Sudeste,PF,Boleto,1056.0,0
+241,2025-11-05,Branco,Chardonnay Safra,2013,116.51,22,0.0,Distribuidor,Centro-Oeste,PJ,Credito,2563.22,0
+242,2026-04-09,Branco,Riesling Doce,2005,160.25,5,0.0,E-commerce,Sul,PF,Credito,801.25,0
+243,2024-06-17,Tinto,Cabernet Reserva,2001,266.8,6,0.1,Distribuidor,Sudeste,PJ,Pix,1440.72,1
+244,2025-09-03,Rose,Rose Brasileiro,2014,156.36,1,0.05,E-commerce,Sudeste,PF,Boleto,148.54,0
+245,2024-05-16,Espumante,Brut Tradicional,2001,215.33,1,0.05,Loja Fisica,Sul,PF,Debito,204.56,0
+246,2025-09-04,Branco,Sauvignon Blanc,2014,79.23,1,0.0,E-commerce,Nordeste,PF,Debito,79.23,1
+247,2025-07-31,Rose,Rose Brasileiro,2019,147.15,10,0.05,Loja Fisica,Sul,PF,Pix,1397.92,1
+248,2026-01-05,Tinto,Tannat Especial,2003,132.12,9,0.0,E-commerce,Sul,PF,Credito,1189.08,0
+249,2024-07-18,Tinto,Tannat Especial,2018,296.73,33,0.0,Loja Fisica,Sudeste,PJ,Credito,9792.09,1
+250,2024-12-08,Espumante,Brut Tradicional,2013,155.64,39,0.15,Loja Fisica,Centro-Oeste,PJ,Debito,5159.47,1
+251,2025-08-04,Tinto,Merlot Classico,2022,333.01,7,0.05,Eventos,Nordeste,PF,Credito,2214.52,0
+252,2024-12-23,Tinto,Merlot Classico,2003,141.21,4,0.05,Loja Fisica,Sudeste,PF,Pix,536.6,1
+253,2025-04-24,Tinto,Malbec Premium,2021,323.67,38,0.15,Loja Fisica,Sul,PJ,Credito,10454.54,1
+254,2025-06-27,Branco,Sauvignon Blanc,2018,131.68,9,0.0,E-commerce,Sudeste,PJ,Debito,1185.12,1
+255,2025-01-06,Tinto,Cabernet Reserva,2023,126.69,1,0.0,Loja Fisica,Sudeste,PF,Credito,126.69,1
+256,2025-02-28,Tinto,Cabernet Reserva,2000,150.84,11,0.05,E-commerce,Centro-Oeste,PF,Pix,1576.28,1
+257,2025-07-31,Branco,Sauvignon Blanc,2000,78.99,6,0.1,E-commerce,Sul,PF,Credito,426.55,0
+258,2025-04-19,Tinto,Merlot Classico,2016,311.92,3,0.0,Distribuidor,Nordeste,PF,Debito,935.76,0
+259,2025-12-12,Tinto,Malbec Premium,2008,124.82,10,0.05,Loja Fisica,Sudeste,PF,Credito,1185.79,1
+260,2026-01-30,Branco,Sauvignon Blanc,2002,137.3,6,0.2,E-commerce,Sudeste,PF,Boleto,659.04,0
+261,2025-07-21,Tinto,Tannat Especial,2014,142.79,6,0.1,E-commerce,Nordeste,PF,Credito,771.07,1
+262,2025-11-28,Rose,Rose Brasileiro,2004,181.92,4,0.15,E-commerce,Nordeste,PF,Debito,618.53,0
+263,2026-03-27,Rose,Rose Brasileiro,2013,114.54,8,0.0,Loja Fisica,Centro-Oeste,PF,Credito,916.32,1
+264,2025-02-26,Tinto,Merlot Classico,2011,136.5,3,0.15,Distribuidor,Sul,PF,Credito,348.07,1
+265,2025-10-08,Branco,Riesling Doce,2017,211.76,4,0.1,E-commerce,Nordeste,PF,Pix,762.34,0
+266,2024-12-23,Espumante,Brut Tradicional,2009,265.29,3,0.0,Distribuidor,Sul,PF,Boleto,795.87,1
+267,2024-12-03,Rose,Rose Brasileiro,2021,79.11,5,0.05,Loja Fisica,Sudeste,PF,Pix,375.77,1
+268,2025-01-15,Branco,Sauvignon Blanc,2011,215.39,2,0.1,Loja Fisica,Sudeste,PF,Debito,387.7,1
+269,2025-12-27,Rose,Rose Brasileiro,2005,157.28,4,0.0,Loja Fisica,Sul,PF,Pix,629.12,1
+270,2024-11-20,Espumante,Brut Tradicional,2019,99.97,32,0.0,Distribuidor,Norte,PJ,Credito,3199.04,0
+271,2025-03-29,Branco,Riesling Doce,2021,103.69,6,0.0,Loja Fisica,Nordeste,PF,Debito,622.14,1
+272,2024-07-29,Espumante,Brut Tradicional,2012,397.17,15,0.0,Loja Fisica,Sudeste,PJ,Credito,5957.55,1
+273,2025-11-18,Tinto,Tannat Especial,2018,116.9,10,0.0,Loja Fisica,Sudeste,PF,Pix,1169.0,0
+274,2024-09-11,Tinto,Merlot Classico,2004,223.0,9,0.1,E-commerce,Sudeste,PF,Debito,1806.3,1
+275,2025-12-19,Tinto,Malbec Premium,2004,130.4,2,0.05,Loja Fisica,Nordeste,PF,Pix,247.76,1
+276,2025-09-08,Tinto,Cabernet Reserva,2020,268.58,36,0.1,Distribuidor,Sudeste,PJ,Pix,8701.99,1
+277,2026-02-21,Branco,Riesling Doce,2010,188.32,6,0.15,Loja Fisica,Sudeste,PF,Boleto,960.43,0
+278,2025-11-11,Tinto,Malbec Premium,2015,218.79,8,0.0,Distribuidor,Sudeste,PF,Credito,1750.32,1
+279,2024-03-28,Tinto,Tannat Especial,2016,225.58,3,0.2,E-commerce,Sudeste,PF,Pix,541.39,1
+280,2024-03-04,Rose,Rose Brasileiro,2015,115.93,22,0.1,E-commerce,Norte,PJ,Debito,2295.41,1
+281,2025-02-23,Espumante,Brut Tradicional,2007,316.62,8,0.0,Loja Fisica,Sul,PF,Credito,2532.96,1
+282,2026-01-13,Tinto,Cabernet Reserva,2006,241.12,6,0.05,E-commerce,Sudeste,PF,Debito,1374.38,0
+283,2025-07-31,Tinto,Merlot Classico,2011,139.4,5,0.15,Loja Fisica,Centro-Oeste,PJ,Pix,592.45,1
+284,2025-01-18,Tinto,Tannat Especial,2015,153.03,11,0.0,E-commerce,Nordeste,PF,Debito,1683.33,1
+285,2025-01-03,Branco,Sauvignon Blanc,2005,72.2,10,0.15,E-commerce,Sudeste,PF,Debito,613.7,1
+286,2025-01-02,Tinto,Malbec Premium,2015,196.55,6,0.1,Distribuidor,Sudeste,PF,Boleto,1061.37,1
+287,2025-03-23,Tinto,Merlot Classico,2009,230.37,10,0.2,Loja Fisica,Sudeste,PF,Credito,1842.96,1
+288,2025-01-24,Branco,Riesling Doce,2006,136.25,2,0.05,Loja Fisica,Sudeste,PF,Credito,258.88,1
+289,2024-03-20,Tinto,Cabernet Reserva,2000,334.17,5,0.0,E-commerce,Sudeste,PF,Credito,1670.85,1
+290,2026-04-15,Tinto,Tannat Especial,2023,135.08,17,0.1,E-commerce,Sul,PJ,Credito,2066.72,1
+291,2026-03-03,Tinto,Malbec Premium,2023,95.55,4,0.2,Loja Fisica,Norte,PF,Debito,305.76,1
+292,2024-05-06,Branco,Riesling Doce,2005,222.33,10,0.0,E-commerce,Sul,PF,Credito,2223.3,0
+293,2024-01-07,Espumante,Moscatel Doce,2016,272.33,3,0.0,Loja Fisica,Sul,PF,Debito,816.99,0
+294,2024-06-25,Branco,Sauvignon Blanc,2007,76.32,9,0.0,E-commerce,Centro-Oeste,PF,Debito,686.88,1
+295,2024-07-08,Espumante,Moscatel Doce,2007,337.49,2,0.25,Distribuidor,Sudeste,PF,Credito,506.24,0
+296,2025-10-22,Tinto,Cabernet Reserva,2003,83.19,8,0.0,Loja Fisica,Centro-Oeste,PF,Credito,665.52,0
+297,2026-04-05,Branco,Sauvignon Blanc,2007,113.86,4,0.05,Loja Fisica,Sul,PF,Debito,432.67,1
+298,2025-07-07,Tinto,Cabernet Reserva,2015,271.7,3,0.1,Loja Fisica,Centro-Oeste,PF,Pix,733.59,0
+299,2024-08-24,Branco,Riesling Doce,2001,164.29,6,0.0,Loja Fisica,Sul,PF,Credito,985.74,0
+300,2025-11-30,Branco,Riesling Doce,2015,99.92,10,0.25,Loja Fisica,Sul,PF,Debito,749.4,1
+301,2025-05-20,Rose,Rose Brasileiro,2014,84.4,8,0.0,Loja Fisica,Sul,PF,Pix,675.2,0
+302,2026-01-26,Tinto,Malbec Premium,2022,104.72,9,0.0,Distribuidor,Sul,PF,Pix,942.48,1
+303,2025-09-23,Tinto,Malbec Premium,2006,312.11,5,0.1,E-commerce,Sul,PF,Credito,1404.5,1
+304,2024-02-24,Branco,Sauvignon Blanc,2014,60.95,29,0.0,Loja Fisica,Sudeste,PJ,Pix,1767.55,1
+305,2026-02-25,Tinto,Cabernet Reserva,2011,253.48,2,0.2,Distribuidor,Sudeste,PF,Boleto,405.57,1
+306,2024-03-24,Rose,Rose Provence,2014,89.72,6,0.0,E-commerce,Nordeste,PF,Debito,538.32,1
+307,2025-01-11,Branco,Riesling Doce,2009,94.57,11,0.1,Loja Fisica,Centro-Oeste,PF,Credito,936.24,1
+308,2026-03-31,Tinto,Merlot Classico,2008,244.96,27,0.1,Distribuidor,Sul,PJ,Boleto,5952.53,1
+309,2024-04-06,Tinto,Cabernet Reserva,2004,202.48,11,0.05,E-commerce,Nordeste,PF,Credito,2115.92,0
+310,2026-02-18,Rose,Rose Provence,2002,120.74,3,0.0,Distribuidor,Norte,PF,Credito,362.22,1
+311,2024-06-15,Espumante,Brut Tradicional,2007,290.39,7,0.0,Eventos,Nordeste,PF,Pix,2032.73,0
+312,2024-08-05,Tinto,Merlot Classico,2003,261.8,2,0.0,E-commerce,Sul,PF,Debito,523.6,1
+313,2024-10-09,Tinto,Tannat Especial,2013,114.8,4,0.1,Loja Fisica,Sudeste,PF,Credito,413.28,0
+314,2026-02-05,Tinto,Cabernet Reserva,2020,95.34,7,0.15,Loja Fisica,Sudeste,PF,Pix,567.27,1
+315,2024-05-27,Tinto,Merlot Classico,2017,272.16,4,0.2,Eventos,Sudeste,PJ,Debito,870.91,1
+316,2025-05-24,Tinto,Cabernet Reserva,2001,95.37,1,0.2,Loja Fisica,Sudeste,PF,Credito,76.3,1
+317,2026-03-31,Espumante,Brut Tradicional,2002,148.45,3,0.0,Loja Fisica,Sul,PF,Pix,445.35,0
+318,2025-07-25,Espumante,Moscatel Doce,2020,203.05,2,0.0,E-commerce,Norte,PF,Credito,406.1,1
+319,2024-08-06,Espumante,Moscatel Doce,2017,357.86,11,0.0,E-commerce,Sudeste,PF,Credito,3936.46,1
+320,2024-01-23,Tinto,Merlot Classico,2013,105.41,3,0.0,E-commerce,Sul,PF,Credito,316.23,0
+321,2026-02-24,Branco,Chardonnay Safra,2000,71.89,6,0.0,Eventos,Sul,PJ,Credito,431.34,1
+322,2025-08-19,Tinto,Cabernet Reserva,2008,83.51,3,0.0,Distribuidor,Sul,PF,Pix,250.53,1
+323,2025-11-21,Tinto,Merlot Classico,2016,132.61,11,0.1,Distribuidor,Sul,PF,Pix,1312.84,1
+324,2024-04-05,Tinto,Cabernet Reserva,2022,156.91,5,0.0,E-commerce,Sudeste,PF,Credito,784.55,1
+325,2025-04-24,Rose,Rose Brasileiro,2008,174.25,4,0.2,Eventos,Sudeste,PF,Debito,557.6,1
+326,2025-04-15,Espumante,Moscatel Doce,2002,185.71,1,0.05,Loja Fisica,Sudeste,PF,Pix,176.42,1
+327,2025-08-15,Tinto,Cabernet Reserva,2004,286.12,6,0.25,Loja Fisica,Sudeste,PF,Credito,1287.54,1
+328,2025-05-21,Espumante,Brut Tradicional,2011,255.34,2,0.0,E-commerce,Sul,PF,Pix,510.68,1
+329,2024-01-29,Branco,Sauvignon Blanc,2015,140.0,1,0.0,Loja Fisica,Sudeste,PF,Debito,140.0,1
+330,2025-09-05,Tinto,Merlot Classico,2018,214.18,5,0.05,E-commerce,Sudeste,PF,Boleto,1017.36,1
+331,2024-09-28,Espumante,Brut Tradicional,2001,97.91,11,0.05,Loja Fisica,Norte,PF,Credito,1023.16,1
+332,2026-03-08,Espumante,Moscatel Doce,2017,121.55,3,0.0,E-commerce,Sul,PF,Credito,364.65,1
+333,2025-01-04,Tinto,Tannat Especial,2009,309.17,11,0.05,E-commerce,Nordeste,PF,Pix,3230.83,1
+334,2024-08-22,Espumante,Brut Tradicional,2012,363.77,4,0.0,Loja Fisica,Sudeste,PF,Credito,1455.08,0
+335,2025-11-30,Tinto,Merlot Classico,2019,239.2,10,0.15,Loja Fisica,Sudeste,PF,Pix,2033.2,1
+336,2024-04-08,Tinto,Merlot Classico,2013,209.76,7,0.1,Loja Fisica,Sudeste,PF,Credito,1321.49,0
+337,2024-10-21,Tinto,Cabernet Reserva,2016,254.8,7,0.0,E-commerce,Sul,PF,Credito,1783.6,1
+338,2024-01-31,Rose,Rose Brasileiro,2000,189.0,7,0.05,Distribuidor,Sudeste,PF,Credito,1256.85,0
+339,2026-01-07,Tinto,Cabernet Reserva,2013,335.02,11,0.05,Eventos,Sul,PF,Pix,3500.96,1
+340,2025-08-17,Tinto,Malbec Premium,2001,109.75,10,0.1,Eventos,Sudeste,PF,Boleto,987.75,0
+341,2025-12-11,Tinto,Merlot Classico,2012,147.96,18,0.05,E-commerce,Centro-Oeste,PJ,Pix,2530.12,1
+342,2024-04-24,Branco,Riesling Doce,2014,209.49,5,0.0,E-commerce,Sudeste,PF,Credito,1047.45,0
+343,2024-10-18,Rose,Rose Provence,2002,184.2,8,0.2,E-commerce,Sudeste,PF,Debito,1178.88,0
+344,2025-04-19,Branco,Chardonnay Safra,2007,121.24,11,0.0,Eventos,Sudeste,PF,Debito,1333.64,1
+345,2024-06-08,Tinto,Tannat Especial,2016,284.27,3,0.0,Loja Fisica,Sudeste,PJ,Credito,852.81,0
+346,2025-04-20,Branco,Riesling Doce,2022,231.44,13,0.0,Loja Fisica,Sudeste,PJ,Pix,3008.72,1
+347,2025-11-02,Tinto,Malbec Premium,2014,161.34,1,0.0,Loja Fisica,Sudeste,PF,Pix,161.34,0
+348,2025-01-15,Tinto,Merlot Classico,2019,325.44,9,0.2,E-commerce,Sudeste,PF,Credito,2343.17,1
+349,2025-08-23,Tinto,Malbec Premium,2016,281.46,3,0.0,Distribuidor,Sul,PF,Pix,844.38,1
+350,2024-01-03,Branco,Riesling Doce,2017,204.08,3,0.0,Distribuidor,Sul,PF,Pix,612.24,0
+351,2025-04-30,Tinto,Tannat Especial,2011,298.68,9,0.1,Loja Fisica,Sul,PF,Debito,2419.31,1
+352,2025-08-24,Espumante,Moscatel Doce,2014,143.37,36,0.05,Eventos,Norte,PJ,Pix,4903.25,0
+353,2026-01-08,Tinto,Merlot Classico,2002,121.45,8,0.15,Loja Fisica,Sudeste,PF,Credito,825.86,1
+354,2024-01-15,Tinto,Tannat Especial,2005,239.89,7,0.0,E-commerce,Sudeste,PF,Pix,1679.23,1
+355,2025-04-08,Rose,Rose Brasileiro,2011,199.69,5,0.0,Distribuidor,Sudeste,PF,Debito,998.45,0
+356,2025-04-15,Rose,Rose Brasileiro,2011,190.36,11,0.1,Loja Fisica,Sul,PF,Pix,1884.56,1
+357,2025-03-04,Branco,Sauvignon Blanc,2020,151.75,32,0.15,Eventos,Sudeste,PJ,Pix,4127.6,1
+358,2024-04-29,Branco,Riesling Doce,2019,108.77,2,0.1,Loja Fisica,Sudeste,PF,Credito,195.79,1
+359,2025-11-05,Branco,Sauvignon Blanc,2009,152.0,39,0.15,E-commerce,Sul,PJ,Pix,5038.8,1
+360,2024-10-06,Rose,Rose Provence,2020,184.77,7,0.25,Distribuidor,Sudeste,PF,Boleto,970.04,1
+361,2024-04-20,Tinto,Malbec Premium,2003,146.55,21,0.0,E-commerce,Sudeste,PJ,Credito,3077.55,1
+362,2024-10-05,Branco,Sauvignon Blanc,2008,90.35,5,0.0,E-commerce,Centro-Oeste,PF,Pix,451.75,0
+363,2024-08-24,Branco,Chardonnay Safra,2021,187.76,9,0.1,E-commerce,Nordeste,PF,Debito,1520.86,1
+364,2026-04-01,Tinto,Tannat Especial,2019,138.49,7,0.15,E-commerce,Sudeste,PF,Credito,824.02,1
+365,2024-01-26,Tinto,Merlot Classico,2008,185.12,4,0.0,Distribuidor,Sudeste,PF,Pix,740.48,0
+366,2024-06-27,Tinto,Tannat Especial,2003,192.6,6,0.2,Loja Fisica,Sudeste,PF,Credito,924.48,1
+367,2026-02-12,Tinto,Tannat Especial,2005,114.72,4,0.0,Distribuidor,Sul,PF,Credito,458.88,1
+368,2025-06-03,Tinto,Tannat Especial,2007,234.31,16,0.0,Loja Fisica,Sudeste,PJ,Pix,3748.96,1
+369,2024-05-25,Branco,Chardonnay Safra,2008,240.93,7,0.1,E-commerce,Sudeste,PF,Credito,1517.86,1
+370,2025-05-25,Tinto,Cabernet Reserva,2007,92.79,4,0.0,Loja Fisica,Sul,PF,Credito,371.16,1
+371,2024-07-26,Rose,Rose Provence,2007,157.11,8,0.05,E-commerce,Sul,PF,Credito,1194.04,0
+372,2025-10-07,Rose,Rose Provence,2017,174.23,17,0.2,Eventos,Nordeste,PJ,Pix,2369.53,1
+373,2025-03-14,Branco,Sauvignon Blanc,2023,107.29,34,0.1,Distribuidor,Sudeste,PJ,Pix,3283.07,1
+374,2026-02-10,Espumante,Brut Tradicional,2006,314.67,3,0.15,E-commerce,Sul,PF,Boleto,802.41,1
+375,2024-06-09,Tinto,Malbec Premium,2006,316.63,3,0.0,Distribuidor,Sul,PF,Pix,949.89,1
+376,2025-03-11,Tinto,Merlot Classico,2006,155.1,6,0.2,E-commerce,Nordeste,PF,Credito,744.48,1
+377,2024-10-05,Espumante,Brut Tradicional,2012,194.47,10,0.1,Loja Fisica,Sudeste,PF,Pix,1750.23,1
+378,2026-03-29,Espumante,Brut Tradicional,2016,114.26,21,0.15,E-commerce,Nordeste,PJ,Debito,2039.54,0
+379,2025-12-12,Tinto,Malbec Premium,2023,114.53,3,0.0,Eventos,Sudeste,PF,Boleto,343.59,0
+380,2024-10-03,Tinto,Merlot Classico,2015,290.16,6,0.05,Loja Fisica,Sudeste,PF,Pix,1653.91,1
+381,2024-06-24,Tinto,Malbec Premium,2015,249.99,5,0.2,Loja Fisica,Sudeste,PF,Credito,999.96,0
+382,2024-04-27,Branco,Riesling Doce,2010,113.17,11,0.1,E-commerce,Sudeste,PF,Credito,1120.38,0
+383,2025-06-18,Branco,Sauvignon Blanc,2006,122.29,4,0.2,E-commerce,Sudeste,PF,Debito,391.33,1
+384,2025-06-12,Tinto,Malbec Premium,2016,90.78,8,0.15,E-commerce,Sudeste,PF,Credito,617.3,1
+385,2025-06-30,Branco,Riesling Doce,2017,194.04,16,0.0,E-commerce,Sul,PJ,Debito,3104.64,1
+386,2024-08-24,Tinto,Merlot Classico,2019,198.13,5,0.1,Loja Fisica,Sudeste,PF,Credito,891.59,1
+387,2024-01-25,Tinto,Tannat Especial,2013,149.49,13,0.1,E-commerce,Sudeste,PJ,Credito,1749.03,1
+388,2024-06-22,Tinto,Tannat Especial,2000,337.29,10,0.0,Loja Fisica,Sudeste,PJ,Credito,3372.9,1
+389,2026-02-17,Branco,Sauvignon Blanc,2023,221.38,24,0.2,E-commerce,Sudeste,PJ,Credito,4250.5,1
+390,2025-07-18,Tinto,Tannat Especial,2007,188.02,30,0.0,E-commerce,Sul,PJ,Debito,5640.6,1
+391,2025-11-20,Tinto,Merlot Classico,2019,317.93,2,0.05,E-commerce,Sul,PF,Pix,604.07,0
+392,2025-02-07,Tinto,Cabernet Reserva,2012,227.11,5,0.1,Distribuidor,Sudeste,PF,Credito,1022.0,1
+393,2026-01-07,Tinto,Tannat Especial,2012,303.73,3,0.0,Loja Fisica,Centro-Oeste,PF,Debito,911.19,0
+394,2025-05-13,Tinto,Tannat Especial,2008,255.26,5,0.05,E-commerce,Sudeste,PF,Credito,1212.48,1
+395,2024-06-06,Tinto,Tannat Especial,2005,104.61,4,0.2,Loja Fisica,Sul,PF,Pix,334.75,1
+396,2026-03-27,Tinto,Malbec Premium,2023,335.67,3,0.0,Eventos,Sul,PF,Debito,1007.01,1
+397,2024-04-20,Tinto,Merlot Classico,2011,122.71,5,0.05,E-commerce,Sudeste,PF,Credito,582.87,1
+398,2024-05-03,Espumante,Moscatel Doce,2001,133.21,11,0.05,E-commerce,Sudeste,PF,Credito,1392.04,1
+399,2025-01-10,Tinto,Merlot Classico,2005,206.02,5,0.25,E-commerce,Sudeste,PF,Credito,772.58,0
+400,2024-12-26,Espumante,Moscatel Doce,2002,230.49,8,0.0,Loja Fisica,Sudeste,PF,Credito,1843.92,1
+401,2024-10-30,Branco,Chardonnay Safra,2011,88.97,1,0.0,Distribuidor,Sudeste,PF,Credito,88.97,1
+402,2024-05-26,Tinto,Tannat Especial,2006,202.25,8,0.0,Eventos,Sudeste,PF,Debito,1618.0,0
+403,2024-06-13,Tinto,Tannat Especial,2015,258.99,19,0.05,Loja Fisica,Centro-Oeste,PJ,Boleto,4674.77,0
+404,2024-10-29,Tinto,Cabernet Reserva,2007,308.65,8,0.0,E-commerce,Sul,PF,Credito,2469.2,0
+405,2025-10-03,Tinto,Merlot Classico,2005,151.57,8,0.0,Loja Fisica,Centro-Oeste,PF,Credito,1212.56,0
+406,2025-07-23,Espumante,Brut Tradicional,2007,385.56,9,0.0,E-commerce,Sudeste,PJ,Pix,3470.04,0
+407,2025-08-21,Espumante,Moscatel Doce,2006,305.52,8,0.2,Loja Fisica,Sul,PF,Pix,1955.33,1
+408,2025-07-04,Tinto,Malbec Premium,2015,234.98,5,0.0,E-commerce,Sudeste,PF,Credito,1174.9,1
+409,2024-08-21,Tinto,Malbec Premium,2012,246.6,4,0.0,E-commerce,Sudeste,PF,Boleto,986.4,1
+410,2025-10-12,Tinto,Merlot Classico,2014,247.88,3,0.1,Distribuidor,Sudeste,PF,Credito,669.28,0
+411,2025-07-14,Tinto,Merlot Classico,2017,276.53,38,0.2,E-commerce,Sudeste,PJ,Credito,8406.51,1
+412,2025-12-05,Tinto,Merlot Classico,2014,313.6,10,0.0,Distribuidor,Sul,PF,Credito,3136.0,1
+413,2025-11-10,Espumante,Moscatel Doce,2012,238.57,4,0.15,Distribuidor,Sudeste,PJ,Credito,811.14,0
+414,2025-06-17,Branco,Riesling Doce,2012,222.63,2,0.1,E-commerce,Sul,PF,Credito,400.73,0
+415,2025-03-26,Tinto,Cabernet Reserva,2000,266.41,1,0.05,Loja Fisica,Sudeste,PF,Credito,253.09,1
+416,2025-04-02,Tinto,Malbec Premium,2021,99.19,5,0.05,E-commerce,Sudeste,PF,Credito,471.15,1
+417,2024-08-26,Tinto,Merlot Classico,2000,189.12,8,0.05,Distribuidor,Sudeste,PF,Credito,1437.31,1
+418,2025-08-24,Espumante,Brut Tradicional,2014,395.61,15,0.1,Eventos,Sudeste,PJ,Debito,5340.74,0
+419,2024-04-18,Branco,Riesling Doce,2002,85.44,27,0.0,E-commerce,Sudeste,PJ,Pix,2306.88,1
+420,2025-09-07,Tinto,Malbec Premium,2002,318.84,11,0.0,E-commerce,Nordeste,PF,Debito,3507.24,1
+421,2025-11-17,Tinto,Cabernet Reserva,2004,96.64,3,0.05,Loja Fisica,Sul,PF,Pix,275.42,1
+422,2024-10-30,Branco,Chardonnay Safra,2016,73.52,1,0.25,E-commerce,Sudeste,PF,Credito,55.14,0
+423,2024-01-12,Tinto,Malbec Premium,2014,127.64,8,0.05,Loja Fisica,Sudeste,PF,Pix,970.06,1
+424,2024-01-28,Espumante,Moscatel Doce,2009,359.13,6,0.05,E-commerce,Nordeste,PF,Credito,2047.04,0
+425,2025-12-05,Branco,Riesling Doce,2020,63.95,6,0.0,E-commerce,Sul,PF,Credito,383.7,0
+426,2024-05-07,Tinto,Malbec Premium,2000,205.6,34,0.25,Loja Fisica,Sul,PJ,Credito,5242.8,1
+427,2026-01-25,Espumante,Moscatel Doce,2010,342.81,4,0.15,Loja Fisica,Nordeste,PF,Debito,1165.55,0
+428,2025-02-11,Espumante,Brut Tradicional,2009,355.59,6,0.0,Distribuidor,Nordeste,PF,Credito,2133.54,0
+429,2024-10-29,Tinto,Tannat Especial,2021,138.43,36,0.25,E-commerce,Sudeste,PJ,Credito,3737.61,1
+430,2024-02-25,Tinto,Malbec Premium,2010,239.11,10,0.05,Loja Fisica,Sul,PJ,Credito,2271.55,1
+431,2025-08-30,Tinto,Malbec Premium,2013,172.95,5,0.2,Eventos,Sudeste,PF,Credito,691.8,0
+432,2025-11-10,Tinto,Tannat Especial,2022,292.72,5,0.2,Loja Fisica,Nordeste,PF,Debito,1170.88,1
+433,2025-04-13,Rose,Rose Brasileiro,2001,166.39,4,0.15,E-commerce,Sudeste,PF,Debito,565.73,0
+434,2026-03-10,Tinto,Merlot Classico,2000,86.74,12,0.05,Loja Fisica,Sudeste,PJ,Credito,988.84,0
+435,2024-04-16,Tinto,Cabernet Reserva,2018,316.84,11,0.05,E-commerce,Sudeste,PF,Boleto,3310.98,0
+436,2024-02-28,Tinto,Tannat Especial,2022,164.75,34,0.05,E-commerce,Sudeste,PJ,Pix,5321.43,1
+437,2025-04-06,Tinto,Tannat Especial,2011,238.97,5,0.0,E-commerce,Norte,PF,Credito,1194.85,1
+438,2024-04-11,Tinto,Tannat Especial,2017,132.72,5,0.2,E-commerce,Sudeste,PF,Credito,530.88,1
+439,2024-09-29,Tinto,Tannat Especial,2007,121.65,21,0.1,Loja Fisica,Sudeste,PJ,Boleto,2299.18,1
+440,2025-10-09,Tinto,Cabernet Reserva,2004,284.26,7,0.0,E-commerce,Sul,PF,Credito,1989.82,0
+441,2025-09-27,Branco,Riesling Doce,2022,131.37,7,0.2,Loja Fisica,Sudeste,PF,Debito,735.67,1
+442,2024-02-14,Tinto,Merlot Classico,2012,83.77,11,0.0,E-commerce,Sudeste,PF,Pix,921.47,1
+443,2024-06-02,Tinto,Merlot Classico,2004,117.29,6,0.0,E-commerce,Sudeste,PF,Credito,703.74,1
+444,2026-02-06,Tinto,Tannat Especial,2019,143.8,9,0.0,Distribuidor,Sudeste,PF,Debito,1294.2,1
+445,2024-09-24,Tinto,Malbec Premium,2009,212.13,8,0.05,Distribuidor,Centro-Oeste,PF,Debito,1612.19,1
+446,2026-04-08,Rose,Rose Brasileiro,2003,145.93,8,0.0,E-commerce,Sul,PF,Credito,1167.44,0
+447,2024-12-18,Tinto,Merlot Classico,2003,257.8,7,0.25,Loja Fisica,Norte,PF,Credito,1353.45,1
+448,2024-08-25,Espumante,Moscatel Doce,2012,163.73,5,0.15,E-commerce,Sudeste,PF,Pix,695.85,0
+449,2025-06-25,Tinto,Tannat Especial,2018,110.27,15,0.0,Distribuidor,Sudeste,PJ,Credito,1654.05,1
+450,2025-12-24,Tinto,Tannat Especial,2011,213.36,11,0.2,Eventos,Sudeste,PF,Credito,1877.57,0
+451,2025-01-22,Tinto,Merlot Classico,2009,130.68,9,0.15,E-commerce,Sudeste,PF,Credito,999.7,1
+452,2025-03-14,Branco,Riesling Doce,2010,116.72,8,0.15,Distribuidor,Sudeste,PF,Credito,793.7,1
+453,2024-12-18,Tinto,Merlot Classico,2017,263.98,1,0.0,Distribuidor,Nordeste,PF,Debito,263.98,1
+454,2024-09-26,Branco,Sauvignon Blanc,2015,224.48,1,0.0,E-commerce,Sudeste,PF,Credito,224.48,1
+455,2024-01-26,Tinto,Cabernet Reserva,2023,148.11,8,0.1,Eventos,Sudeste,PF,Credito,1066.39,1
+456,2025-08-04,Tinto,Malbec Premium,2018,275.51,10,0.0,Loja Fisica,Sul,PF,Pix,2755.1,1
+457,2024-07-25,Espumante,Moscatel Doce,2018,101.52,11,0.05,Loja Fisica,Nordeste,PF,Pix,1060.88,1
+458,2026-01-15,Tinto,Cabernet Reserva,2019,101.35,14,0.05,Loja Fisica,Sudeste,PJ,Credito,1347.95,1
+459,2025-11-03,Branco,Sauvignon Blanc,2012,233.42,1,0.1,Distribuidor,Norte,PF,Pix,210.08,0
+460,2025-02-26,Tinto,Tannat Especial,2010,129.09,10,0.0,E-commerce,Sudeste,PF,Boleto,1290.9,1
+461,2026-02-24,Branco,Sauvignon Blanc,2020,101.38,11,0.0,Eventos,Sul,PF,Credito,1115.18,0
+462,2024-09-15,Rose,Rose Provence,2003,141.41,7,0.05,E-commerce,Sudeste,PF,Credito,940.38,1
+463,2026-03-09,Tinto,Merlot Classico,2020,169.35,4,0.0,E-commerce,Centro-Oeste,PF,Debito,677.4,1
+464,2025-01-15,Tinto,Cabernet Reserva,2008,266.23,10,0.0,Loja Fisica,Sudeste,PF,Credito,2662.3,1
+465,2024-01-01,Tinto,Cabernet Reserva,2022,138.07,8,0.0,E-commerce,Sudeste,PF,Boleto,1104.56,1
+466,2025-11-14,Rose,Rose Brasileiro,2021,83.96,5,0.05,Loja Fisica,Sudeste,PF,Pix,398.81,1
+467,2026-02-18,Branco,Riesling Doce,2019,124.67,8,0.2,E-commerce,Sudeste,PF,Credito,797.89,1
+468,2024-09-17,Tinto,Malbec Premium,2002,115.74,1,0.0,Loja Fisica,Sudeste,PF,Credito,115.74,0
+469,2024-02-09,Espumante,Moscatel Doce,2006,230.46,3,0.2,Distribuidor,Sul,PJ,Credito,553.1,1
+470,2024-07-27,Tinto,Merlot Classico,2009,209.19,5,0.05,E-commerce,Nordeste,PF,Pix,993.65,0
+471,2025-01-13,Espumante,Moscatel Doce,2002,222.65,9,0.0,Loja Fisica,Sudeste,PF,Credito,2003.85,1
+472,2024-07-28,Branco,Sauvignon Blanc,2008,172.17,10,0.05,E-commerce,Centro-Oeste,PF,Credito,1635.61,1
+473,2025-04-07,Tinto,Cabernet Reserva,2019,150.01,8,0.1,Loja Fisica,Sul,PF,Credito,1080.07,1
+474,2026-02-18,Tinto,Malbec Premium,2016,93.37,30,0.0,Loja Fisica,Sudeste,PJ,Pix,2801.1,1
+475,2024-07-11,Tinto,Cabernet Reserva,2010,246.62,6,0.2,Distribuidor,Sudeste,PF,Credito,1183.78,1
+476,2025-03-26,Tinto,Cabernet Reserva,2009,347.15,20,0.0,Loja Fisica,Sudeste,PJ,Debito,6943.0,0
+477,2025-03-04,Tinto,Tannat Especial,2015,233.8,6,0.0,Eventos,Sul,PF,Credito,1402.8,0
+478,2024-12-04,Branco,Chardonnay Safra,2010,75.56,6,0.0,Loja Fisica,Sudeste,PF,Credito,453.36,0
+479,2026-04-28,Tinto,Merlot Classico,2007,282.39,9,0.0,Eventos,Sul,PJ,Pix,2541.51,1
+480,2024-01-15,Tinto,Tannat Especial,2004,209.39,11,0.15,Loja Fisica,Centro-Oeste,PF,Credito,1957.8,0
+481,2024-06-26,Tinto,Cabernet Reserva,2009,240.57,5,0.05,Loja Fisica,Sudeste,PJ,Pix,1142.71,1
+482,2025-08-02,Tinto,Cabernet Reserva,2005,215.16,3,0.05,E-commerce,Centro-Oeste,PF,Credito,613.21,1
+483,2024-08-21,Branco,Sauvignon Blanc,2004,138.66,10,0.15,E-commerce,Sul,PF,Credito,1178.61,0
+484,2024-09-11,Branco,Chardonnay Safra,2001,62.04,10,0.0,E-commerce,Sul,PF,Pix,620.4,1
+485,2024-12-27,Rose,Rose Provence,2003,155.27,7,0.0,Loja Fisica,Sudeste,PF,Credito,1086.89,0
+486,2025-09-14,Tinto,Malbec Premium,2011,250.16,6,0.0,Distribuidor,Sudeste,PF,Boleto,1500.96,1
+487,2026-01-24,Tinto,Cabernet Reserva,2007,144.22,7,0.05,Loja Fisica,Nordeste,PF,Credito,959.06,0
+488,2024-07-27,Tinto,Merlot Classico,2005,263.72,9,0.0,E-commerce,Sul,PF,Debito,2373.48,1
+489,2025-05-22,Tinto,Tannat Especial,2002,267.66,33,0.0,E-commerce,Sudeste,PJ,Pix,8832.78,0
+490,2024-08-26,Tinto,Tannat Especial,2005,216.72,1,0.2,E-commerce,Sudeste,PF,Debito,173.38,0
+491,2024-09-02,Tinto,Merlot Classico,2021,112.86,4,0.1,Loja Fisica,Nordeste,PF,Debito,406.3,1
+492,2025-01-31,Tinto,Cabernet Reserva,2017,260.34,5,0.2,Loja Fisica,Centro-Oeste,PF,Pix,1041.36,1
+493,2024-05-16,Tinto,Merlot Classico,2005,210.94,10,0.1,Loja Fisica,Nordeste,PF,Credito,1898.46,1
+494,2025-06-19,Branco,Riesling Doce,2008,197.63,9,0.1,Distribuidor,Sudeste,PF,Credito,1600.8,1
+495,2024-02-15,Rose,Rose Provence,2014,171.8,1,0.1,E-commerce,Norte,PF,Pix,154.62,0
+496,2025-09-23,Tinto,Malbec Premium,2020,145.61,5,0.0,Loja Fisica,Norte,PF,Credito,728.05,0
+497,2024-05-15,Tinto,Merlot Classico,2008,165.93,1,0.0,E-commerce,Sudeste,PF,Credito,165.93,1
+498,2024-03-01,Branco,Riesling Doce,2011,99.57,1,0.15,Loja Fisica,Nordeste,PF,Credito,84.63,0
+499,2024-07-09,Espumante,Moscatel Doce,2015,148.79,7,0.2,Loja Fisica,Sudeste,PF,Credito,833.22,1
+500,2025-12-28,Tinto,Malbec Premium,2004,207.21,11,0.0,E-commerce,Sudeste,PF,Credito,2279.31,1
+501,2025-07-18,Tinto,Merlot Classico,2018,255.71,8,0.1,Distribuidor,Sudeste,PF,Credito,1841.11,1
+502,2025-03-28,Tinto,Merlot Classico,2012,211.41,10,0.1,Loja Fisica,Sul,PF,Credito,1902.69,1
+503,2025-12-15,Espumante,Brut Tradicional,2010,189.85,9,0.05,Distribuidor,Sul,PF,Debito,1623.22,1
+504,2025-12-25,Tinto,Tannat Especial,2021,131.33,5,0.2,Loja Fisica,Sul,PF,Credito,525.32,0
+505,2024-05-08,Tinto,Cabernet Reserva,2005,304.27,7,0.0,Loja Fisica,Sudeste,PF,Boleto,2129.89,0
+506,2024-12-24,Tinto,Tannat Especial,2013,228.4,5,0.1,E-commerce,Sudeste,PJ,Credito,1027.8,1
+507,2024-05-17,Tinto,Merlot Classico,2014,176.52,39,0.0,Loja Fisica,Sudeste,PJ,Debito,6884.28,1
+508,2024-10-19,Tinto,Malbec Premium,2011,120.37,17,0.0,E-commerce,Sul,PJ,Credito,2046.29,1
+509,2025-05-09,Tinto,Malbec Premium,2018,192.4,22,0.2,E-commerce,Sudeste,PJ,Credito,3386.24,1
+510,2025-10-07,Tinto,Cabernet Reserva,2016,253.73,3,0.15,Loja Fisica,Sudeste,PJ,Debito,647.01,0
+511,2024-09-07,Branco,Riesling Doce,2003,114.74,34,0.05,Loja Fisica,Sul,PJ,Debito,3706.1,0
+512,2025-06-04,Tinto,Malbec Premium,2014,287.01,2,0.0,Distribuidor,Centro-Oeste,PF,Boleto,574.02,0
+513,2024-09-18,Branco,Sauvignon Blanc,2010,100.63,8,0.2,E-commerce,Sul,PF,Credito,644.03,0
+514,2024-05-29,Tinto,Tannat Especial,2001,90.77,22,0.0,Loja Fisica,Sudeste,PJ,Debito,1996.94,0
+515,2025-04-24,Branco,Chardonnay Safra,2021,151.83,1,0.2,Loja Fisica,Centro-Oeste,PF,Pix,121.46,1
+516,2024-03-15,Branco,Chardonnay Safra,2007,172.01,5,0.05,E-commerce,Sudeste,PF,Credito,817.05,1
+517,2026-03-10,Espumante,Brut Tradicional,2008,321.35,6,0.0,Loja Fisica,Sudeste,PF,Pix,1928.1,1
+518,2025-06-16,Branco,Riesling Doce,2004,60.81,3,0.05,Distribuidor,Sudeste,PF,Credito,173.31,1
+519,2024-11-23,Branco,Sauvignon Blanc,2000,160.79,4,0.2,Loja Fisica,Sul,PF,Pix,514.53,1
+520,2025-08-03,Branco,Chardonnay Safra,2010,125.46,27,0.15,Loja Fisica,Sul,PJ,Boleto,2879.31,1
+521,2024-05-26,Tinto,Merlot Classico,2001,331.07,11,0.0,Loja Fisica,Sudeste,PF,Credito,3641.77,1
+522,2024-07-27,Tinto,Tannat Especial,2009,90.22,3,0.0,Eventos,Centro-Oeste,PF,Credito,270.66,1
+523,2025-04-22,Tinto,Malbec Premium,2003,81.2,11,0.0,Loja Fisica,Sudeste,PF,Credito,893.2,1
+524,2026-02-18,Rose,Rose Provence,2004,84.0,9,0.05,E-commerce,Sudeste,PF,Debito,718.2,1
+525,2024-09-06,Tinto,Tannat Especial,2012,134.39,1,0.0,Loja Fisica,Sudeste,PF,Pix,134.39,0
+526,2024-02-22,Tinto,Merlot Classico,2014,194.18,11,0.05,Loja Fisica,Nordeste,PF,Pix,2029.18,1
+527,2025-05-12,Branco,Chardonnay Safra,2007,225.27,9,0.2,Loja Fisica,Centro-Oeste,PF,Credito,1621.94,1
+528,2026-01-14,Espumante,Moscatel Doce,2013,313.1,11,0.0,Distribuidor,Nordeste,PF,Pix,3444.1,0
+529,2024-09-14,Espumante,Brut Tradicional,2018,262.0,2,0.0,Eventos,Sudeste,PF,Credito,524.0,0
+530,2025-01-16,Tinto,Merlot Classico,2023,145.18,4,0.0,Distribuidor,Sul,PF,Debito,580.72,1
+531,2025-06-05,Branco,Chardonnay Safra,2023,115.96,1,0.0,E-commerce,Sudeste,PF,Debito,115.96,1
+532,2024-08-01,Tinto,Tannat Especial,2000,327.84,6,0.05,Loja Fisica,Sul,PF,Credito,1868.69,1
+533,2025-06-23,Tinto,Tannat Especial,2014,328.73,11,0.05,Distribuidor,Sudeste,PF,Credito,3435.23,1
+534,2025-09-23,Branco,Chardonnay Safra,2016,186.51,4,0.15,Loja Fisica,Sudeste,PF,Pix,634.13,1
+535,2024-02-06,Tinto,Merlot Classico,2017,282.16,8,0.1,Distribuidor,Sul,PF,Credito,2031.55,1
+536,2025-10-02,Espumante,Brut Tradicional,2014,219.17,26,0.0,E-commerce,Sul,PJ,Boleto,5698.42,0
+537,2024-03-06,Branco,Chardonnay Safra,2010,208.97,11,0.15,Loja Fisica,Centro-Oeste,PJ,Boleto,1953.87,1
+538,2026-04-28,Tinto,Malbec Premium,2006,274.83,4,0.0,Loja Fisica,Sul,PF,Pix,1099.32,0
+539,2025-08-15,Tinto,Tannat Especial,2002,131.51,8,0.05,Distribuidor,Sudeste,PF,Pix,999.48,0
+540,2024-11-25,Branco,Sauvignon Blanc,2007,121.88,4,0.1,Eventos,Sudeste,PF,Credito,438.77,1
+541,2024-06-20,Branco,Chardonnay Safra,2008,91.05,6,0.0,Loja Fisica,Sudeste,PF,Pix,546.3,0
+542,2025-10-21,Tinto,Cabernet Reserva,2000,339.18,4,0.0,Loja Fisica,Sudeste,PF,Debito,1356.72,1
+543,2025-02-20,Tinto,Tannat Especial,2022,300.7,37,0.2,Distribuidor,Sudeste,PJ,Debito,8900.72,1
+544,2025-01-11,Tinto,Cabernet Reserva,2019,135.13,6,0.2,E-commerce,Sudeste,PF,Credito,648.62,1
+545,2025-11-21,Tinto,Malbec Premium,2019,175.05,11,0.05,Distribuidor,Sul,PJ,Credito,1829.27,1
+546,2025-05-03,Tinto,Cabernet Reserva,2004,254.41,9,0.0,E-commerce,Sudeste,PJ,Debito,2289.69,1
+547,2024-04-04,Branco,Sauvignon Blanc,2019,86.86,2,0.05,Loja Fisica,Sul,PF,Pix,165.03,1
+548,2024-02-23,Branco,Sauvignon Blanc,2005,145.68,11,0.05,Eventos,Sudeste,PF,Credito,1522.36,0
+549,2024-01-01,Tinto,Cabernet Reserva,2021,118.66,31,0.05,Loja Fisica,Sudeste,PJ,Boleto,3494.54,0
+550,2025-07-18,Tinto,Tannat Especial,2023,162.69,36,0.0,Loja Fisica,Sudeste,PJ,Credito,5856.84,1
+551,2025-03-07,Tinto,Merlot Classico,2004,188.01,4,0.15,Loja Fisica,Sul,PJ,Credito,639.23,1
+552,2025-04-02,Tinto,Merlot Classico,2004,132.04,7,0.0,E-commerce,Sudeste,PF,Boleto,924.28,1
+553,2024-07-31,Tinto,Malbec Premium,2007,133.51,11,0.25,E-commerce,Sul,PF,Boleto,1101.46,0
+554,2025-12-17,Tinto,Malbec Premium,2007,243.8,19,0.0,E-commerce,Sudeste,PJ,Pix,4632.2,1
+555,2025-04-12,Espumante,Moscatel Doce,2023,282.72,1,0.1,E-commerce,Sul,PF,Credito,254.45,1
+556,2024-02-24,Tinto,Tannat Especial,2007,169.88,10,0.1,Loja Fisica,Sudeste,PF,Pix,1528.92,1
+557,2024-11-05,Espumante,Brut Tradicional,2015,138.41,25,0.0,Loja Fisica,Sudeste,PJ,Credito,3460.25,0
+558,2024-01-16,Tinto,Tannat Especial,2023,262.72,2,0.2,E-commerce,Nordeste,PF,Credito,420.35,0
+559,2024-11-23,Branco,Sauvignon Blanc,2013,115.98,3,0.05,Loja Fisica,Sul,PF,Boleto,330.54,0
+560,2025-11-04,Tinto,Merlot Classico,2021,191.7,8,0.05,E-commerce,Sudeste,PF,Debito,1456.92,1
+561,2024-02-27,Tinto,Malbec Premium,2001,241.45,1,0.05,Distribuidor,Centro-Oeste,PF,Debito,229.38,0
+562,2025-08-27,Tinto,Malbec Premium,2010,305.62,2,0.1,Loja Fisica,Sul,PF,Credito,550.12,1
+563,2024-09-22,Tinto,Malbec Premium,2017,287.56,4,0.0,E-commerce,Sul,PF,Debito,1150.24,1
+564,2024-06-01,Tinto,Merlot Classico,2006,272.08,6,0.0,E-commerce,Sudeste,PF,Pix,1632.48,1
+565,2025-11-09,Tinto,Cabernet Reserva,2013,101.94,9,0.05,Distribuidor,Sudeste,PF,Credito,871.59,1
+566,2025-01-13,Rose,Rose Provence,2021,173.93,8,0.0,E-commerce,Sudeste,PF,Credito,1391.44,1
+567,2024-01-14,Tinto,Merlot Classico,2006,320.81,11,0.1,E-commerce,Sudeste,PF,Pix,3176.02,0
+568,2026-01-09,Branco,Sauvignon Blanc,2003,169.83,7,0.15,Loja Fisica,Sul,PF,Boleto,1010.49,1
+569,2024-11-13,Rose,Rose Brasileiro,2001,95.39,9,0.15,Loja Fisica,Sul,PF,Credito,729.73,0
+570,2024-03-30,Tinto,Cabernet Reserva,2002,323.18,2,0.2,E-commerce,Nordeste,PF,Credito,517.09,1
+571,2024-03-23,Rose,Rose Provence,2021,179.11,9,0.0,Loja Fisica,Nordeste,PF,Credito,1611.99,1
+572,2025-04-13,Branco,Riesling Doce,2019,249.38,6,0.0,Eventos,Sul,PF,Credito,1496.28,1
+573,2024-02-24,Branco,Chardonnay Safra,2015,121.28,31,0.2,Loja Fisica,Centro-Oeste,PJ,Pix,3007.74,1
+574,2026-01-24,Tinto,Merlot Classico,2014,260.37,10,0.2,E-commerce,Centro-Oeste,PF,Boleto,2082.96,1
+575,2025-06-28,Branco,Chardonnay Safra,2004,241.26,1,0.25,Distribuidor,Centro-Oeste,PF,Credito,180.94,0
+576,2024-11-21,Tinto,Tannat Especial,2003,213.17,3,0.0,Distribuidor,Nordeste,PF,Debito,639.51,1
+577,2026-02-14,Tinto,Cabernet Reserva,2008,246.4,11,0.0,E-commerce,Centro-Oeste,PF,Credito,2710.4,0
+578,2026-01-15,Rose,Rose Provence,2016,141.37,8,0.1,Loja Fisica,Sul,PF,Credito,1017.86,1
+579,2026-04-26,Espumante,Moscatel Doce,2021,342.55,9,0.15,E-commerce,Nordeste,PF,Pix,2620.51,1
+580,2025-08-10,Rose,Rose Provence,2012,187.94,8,0.1,Loja Fisica,Sudeste,PF,Debito,1353.17,1
+581,2025-05-30,Tinto,Tannat Especial,2016,304.19,10,0.0,Distribuidor,Sul,PF,Pix,3041.9,0
+582,2024-03-04,Tinto,Tannat Especial,2007,134.51,3,0.0,E-commerce,Sul,PF,Pix,403.53,1
+583,2025-12-20,Branco,Chardonnay Safra,2016,107.15,6,0.05,E-commerce,Sudeste,PF,Credito,610.76,0
+584,2024-09-10,Branco,Riesling Doce,2020,157.4,10,0.05,Loja Fisica,Sul,PF,Credito,1495.3,1
+585,2024-10-10,Tinto,Tannat Especial,2022,139.26,8,0.0,Loja Fisica,Sul,PF,Pix,1114.08,0
+586,2026-01-04,Espumante,Moscatel Doce,2013,249.25,10,0.05,Loja Fisica,Sudeste,PF,Pix,2367.88,1
+587,2024-01-27,Branco,Sauvignon Blanc,2019,195.95,5,0.0,E-commerce,Sul,PF,Credito,979.75,1
+588,2024-09-03,Branco,Sauvignon Blanc,2014,93.52,7,0.1,Loja Fisica,Sudeste,PF,Debito,589.18,1
+589,2024-07-09,Tinto,Cabernet Reserva,2006,122.67,5,0.15,Distribuidor,Centro-Oeste,PF,Credito,521.35,1
+590,2025-05-15,Espumante,Moscatel Doce,2002,350.64,4,0.05,E-commerce,Nordeste,PF,Pix,1332.43,1
+591,2024-01-24,Rose,Rose Brasileiro,2015,151.06,7,0.0,Loja Fisica,Nordeste,PF,Pix,1057.42,1
+592,2024-03-30,Espumante,Moscatel Doce,2019,330.93,8,0.2,E-commerce,Sudeste,PF,Debito,2117.95,1
+593,2024-01-08,Tinto,Merlot Classico,2019,300.66,6,0.2,E-commerce,Sudeste,PF,Credito,1443.17,1
+594,2024-07-29,Espumante,Moscatel Doce,2005,212.07,1,0.1,Loja Fisica,Sudeste,PF,Debito,190.86,0
+595,2025-05-20,Branco,Sauvignon Blanc,2001,186.81,2,0.0,Loja Fisica,Nordeste,PF,Credito,373.62,0
+596,2025-01-22,Tinto,Cabernet Reserva,2013,100.33,9,0.1,E-commerce,Sudeste,PF,Debito,812.67,1
+597,2024-05-12,Tinto,Cabernet Reserva,2018,157.35,1,0.1,E-commerce,Sudeste,PF,Credito,141.62,0
+598,2024-02-09,Tinto,Malbec Premium,2018,173.14,28,0.0,E-commerce,Norte,PJ,Credito,4847.92,1
+599,2025-04-03,Tinto,Cabernet Reserva,2001,182.06,7,0.25,Distribuidor,Sudeste,PF,Credito,955.82,1
+600,2025-08-08,Tinto,Malbec Premium,2013,300.3,9,0.2,Eventos,Centro-Oeste,PF,Credito,2162.16,0
+601,2024-04-11,Tinto,Cabernet Reserva,2015,310.62,7,0.15,E-commerce,Sudeste,PF,Debito,1848.19,0
+602,2025-08-21,Branco,Riesling Doce,2003,216.43,11,0.1,Loja Fisica,Sul,PF,Credito,2142.66,0
+603,2026-01-30,Espumante,Moscatel Doce,2003,126.21,32,0.2,Loja Fisica,Nordeste,PJ,Pix,3230.98,1
+604,2025-01-23,Tinto,Cabernet Reserva,2021,156.83,20,0.0,Loja Fisica,Sudeste,PJ,Pix,3136.6,1
+605,2024-01-05,Tinto,Tannat Especial,2009,105.94,10,0.0,Distribuidor,Norte,PF,Credito,1059.4,1
+606,2025-04-08,Tinto,Cabernet Reserva,2003,234.03,11,0.15,Distribuidor,Sudeste,PF,Credito,2188.18,0
+607,2024-12-09,Branco,Riesling Doce,2011,102.98,4,0.0,Loja Fisica,Sudeste,PF,Pix,411.92,1
+608,2024-02-12,Espumante,Brut Tradicional,2015,200.9,29,0.0,Loja Fisica,Sudeste,PJ,Debito,5826.1,0
+609,2024-01-29,Tinto,Cabernet Reserva,2011,145.21,6,0.0,E-commerce,Sudeste,PF,Pix,871.26,1
+610,2024-04-09,Tinto,Cabernet Reserva,2001,225.14,18,0.1,E-commerce,Sul,PJ,Credito,3647.27,1
+611,2024-06-17,Branco,Riesling Doce,2023,84.56,3,0.0,Distribuidor,Nordeste,PF,Boleto,253.68,0
+612,2024-11-21,Tinto,Merlot Classico,2009,115.59,6,0.2,Loja Fisica,Centro-Oeste,PF,Pix,554.83,1
+613,2024-11-06,Tinto,Merlot Classico,2005,81.46,6,0.05,E-commerce,Sudeste,PF,Credito,464.32,1
+614,2025-06-29,Tinto,Malbec Premium,2022,131.44,4,0.0,E-commerce,Sudeste,PF,Credito,525.76,1
+615,2024-05-13,Tinto,Tannat Especial,2018,168.12,5,0.2,Loja Fisica,Sul,PF,Pix,672.48,1
+616,2025-09-05,Rose,Rose Provence,2010,75.61,7,0.0,Loja Fisica,Sudeste,PF,Credito,529.27,0
+617,2025-04-23,Branco,Chardonnay Safra,2014,147.44,26,0.0,Loja Fisica,Sul,PJ,Pix,3833.44,1
+618,2024-12-27,Espumante,Brut Tradicional,2016,201.35,6,0.0,Loja Fisica,Sudeste,PF,Boleto,1208.1,1
+619,2025-03-25,Tinto,Tannat Especial,2017,150.89,1,0.1,Distribuidor,Sul,PF,Pix,135.8,1
+620,2024-04-25,Rose,Rose Provence,2018,89.33,6,0.05,Loja Fisica,Sudeste,PF,Credito,509.18,0
+621,2025-02-28,Tinto,Malbec Premium,2009,158.27,5,0.0,E-commerce,Sudeste,PF,Pix,791.35,0
+622,2025-09-30,Tinto,Malbec Premium,2012,267.82,8,0.0,Loja Fisica,Sul,PF,Credito,2142.56,1
+623,2024-07-02,Tinto,Tannat Especial,2011,164.13,10,0.05,E-commerce,Sudeste,PF,Credito,1559.23,1
+624,2025-02-20,Espumante,Moscatel Doce,2010,297.3,7,0.15,Distribuidor,Sudeste,PF,Credito,1768.93,1
+625,2024-05-30,Branco,Chardonnay Safra,2022,243.07,3,0.1,Loja Fisica,Nordeste,PF,Credito,656.29,1
+626,2024-06-23,Rose,Rose Provence,2015,84.4,39,0.05,E-commerce,Sudeste,PJ,Boleto,3127.02,1
+627,2024-04-27,Rose,Rose Provence,2001,174.14,3,0.0,Loja Fisica,Sul,PF,Pix,522.42,1
+628,2024-07-07,Tinto,Cabernet Reserva,2005,257.23,8,0.1,E-commerce,Sudeste,PF,Pix,1852.06,1
+629,2024-08-16,Branco,Riesling Doce,2012,244.03,31,0.0,Loja Fisica,Sudeste,PJ,Debito,7564.93,0
+630,2026-03-01,Branco,Riesling Doce,2019,182.43,4,0.0,Eventos,Norte,PF,Pix,729.72,0
+631,2025-03-01,Tinto,Tannat Especial,2016,309.13,1,0.0,E-commerce,Sudeste,PF,Credito,309.13,0
+632,2025-12-20,Tinto,Malbec Premium,2012,270.75,1,0.05,Eventos,Sudeste,PF,Debito,257.21,0
+633,2024-11-18,Tinto,Cabernet Reserva,2020,236.34,10,0.05,Distribuidor,Sudeste,PF,Credito,2245.23,1
+634,2026-03-25,Tinto,Cabernet Reserva,2010,170.98,3,0.0,E-commerce,Sudeste,PF,Credito,512.94,0
+635,2026-02-09,Rose,Rose Brasileiro,2022,164.52,11,0.05,Distribuidor,Sudeste,PF,Debito,1719.23,1
+636,2026-02-21,Branco,Sauvignon Blanc,2007,239.13,4,0.05,Distribuidor,Sudeste,PF,Debito,908.69,1
+637,2025-06-28,Tinto,Cabernet Reserva,2010,135.53,26,0.05,E-commerce,Sudeste,PJ,Credito,3347.59,1
+638,2024-02-13,Rose,Rose Provence,2007,183.84,4,0.0,Eventos,Sul,PF,Credito,735.36,1
+639,2026-01-12,Branco,Chardonnay Safra,2006,84.39,6,0.25,E-commerce,Nordeste,PF,Pix,379.75,1
+640,2025-06-16,Tinto,Merlot Classico,2019,121.99,6,0.05,Loja Fisica,Sudeste,PF,Pix,695.34,0
+641,2024-06-25,Tinto,Malbec Premium,2023,136.36,7,0.1,Loja Fisica,Sul,PF,Pix,859.07,1
+642,2025-10-07,Tinto,Malbec Premium,2010,134.78,2,0.2,E-commerce,Centro-Oeste,PF,Credito,215.65,0
+643,2025-03-25,Tinto,Merlot Classico,2002,186.65,4,0.05,E-commerce,Nordeste,PF,Credito,709.27,1
+644,2025-01-10,Tinto,Merlot Classico,2012,164.83,2,0.2,Loja Fisica,Centro-Oeste,PF,Credito,263.73,1
+645,2026-02-14,Tinto,Merlot Classico,2016,206.53,3,0.1,Distribuidor,Nordeste,PF,Credito,557.63,0
+646,2024-08-30,Tinto,Cabernet Reserva,2011,275.43,9,0.05,E-commerce,Sudeste,PF,Pix,2354.93,1
+647,2025-09-20,Tinto,Cabernet Reserva,2005,278.71,4,0.25,E-commerce,Sudeste,PF,Pix,836.13,0
+648,2025-05-31,Tinto,Cabernet Reserva,2018,194.38,10,0.0,Eventos,Sul,PF,Credito,1943.8,1
+649,2025-01-30,Branco,Chardonnay Safra,2006,185.22,36,0.0,Distribuidor,Sul,PJ,Pix,6667.92,0
+650,2025-07-19,Tinto,Merlot Classico,2010,207.45,27,0.0,Distribuidor,Sudeste,PJ,Credito,5601.15,1
+651,2024-10-05,Espumante,Brut Tradicional,2022,104.46,10,0.05,E-commerce,Nordeste,PF,Credito,992.37,1
+652,2024-05-06,Branco,Chardonnay Safra,2017,183.74,8,0.0,Loja Fisica,Nordeste,PF,Debito,1469.92,1
+653,2025-01-16,Espumante,Brut Tradicional,2007,98.18,3,0.05,Loja Fisica,Sudeste,PF,Boleto,279.81,1
+654,2026-04-24,Tinto,Malbec Premium,2002,238.51,6,0.05,E-commerce,Sudeste,PF,Credito,1359.51,0
+655,2024-07-28,Rose,Rose Provence,2000,142.74,11,0.1,Eventos,Sul,PF,Pix,1413.13,1
+656,2024-07-23,Rose,Rose Provence,2020,88.8,5,0.2,Distribuidor,Sudeste,PF,Credito,355.2,1
+657,2024-10-27,Tinto,Malbec Premium,2013,215.46,8,0.1,Loja Fisica,Centro-Oeste,PF,Pix,1551.31,0
+658,2025-03-29,Branco,Chardonnay Safra,2010,203.95,3,0.25,E-commerce,Sul,PF,Debito,458.89,0
+659,2025-05-27,Rose,Rose Brasileiro,2000,195.68,7,0.2,E-commerce,Sudeste,PF,Credito,1095.81,1
+660,2025-08-12,Tinto,Merlot Classico,2005,152.19,31,0.0,E-commerce,Nordeste,PJ,Credito,4717.89,1
+661,2024-04-07,Tinto,Tannat Especial,2020,139.7,7,0.0,Loja Fisica,Sudeste,PF,Credito,977.9,1
+662,2024-08-06,Branco,Sauvignon Blanc,2009,221.81,14,0.0,E-commerce,Sudeste,PJ,Credito,3105.34,1
+663,2024-08-20,Rose,Rose Provence,2015,145.79,11,0.0,Loja Fisica,Sudeste,PF,Boleto,1603.69,0
+664,2024-02-21,Branco,Sauvignon Blanc,2002,193.47,21,0.15,Distribuidor,Sul,PJ,Credito,3453.44,1
+665,2025-11-27,Tinto,Merlot Classico,2001,86.94,1,0.2,Loja Fisica,Sudeste,PF,Credito,69.55,1
+666,2026-04-21,Branco,Sauvignon Blanc,2014,242.17,2,0.15,E-commerce,Sul,PF,Credito,411.69,1
+667,2026-01-21,Tinto,Merlot Classico,2019,208.79,9,0.0,Loja Fisica,Nordeste,PF,Pix,1879.11,0
+668,2024-09-29,Tinto,Cabernet Reserva,2010,320.76,4,0.0,E-commerce,Sudeste,PF,Credito,1283.04,1
+669,2026-01-25,Branco,Chardonnay Safra,2022,228.34,1,0.05,E-commerce,Nordeste,PF,Credito,216.92,1
+670,2024-02-20,Tinto,Tannat Especial,2008,113.25,8,0.1,Distribuidor,Nordeste,PF,Credito,815.4,1
+671,2025-06-14,Tinto,Malbec Premium,2004,223.53,5,0.1,Eventos,Sudeste,PF,Debito,1005.89,1
+672,2025-12-29,Tinto,Merlot Classico,2017,306.96,7,0.1,Loja Fisica,Sul,PF,Pix,1933.85,1
+673,2024-11-18,Tinto,Cabernet Reserva,2000,154.29,4,0.15,E-commerce,Sudeste,PF,Credito,524.59,1
+674,2025-04-06,Rose,Rose Brasileiro,2000,147.59,2,0.15,Distribuidor,Nordeste,PF,Boleto,250.9,1
+675,2024-11-04,Branco,Chardonnay Safra,2014,159.91,5,0.05,Loja Fisica,Sudeste,PF,Credito,759.57,0
+676,2024-08-18,Tinto,Malbec Premium,2019,319.0,4,0.05,Distribuidor,Centro-Oeste,PF,Credito,1212.2,1
+677,2025-05-18,Tinto,Malbec Premium,2019,208.47,1,0.15,Eventos,Sul,PF,Debito,177.2,1
+678,2025-05-11,Tinto,Cabernet Reserva,2009,227.94,10,0.0,E-commerce,Norte,PF,Credito,2279.4,0
+679,2024-11-22,Tinto,Cabernet Reserva,2010,274.2,2,0.15,E-commerce,Sudeste,PF,Debito,466.14,0
+680,2024-10-05,Tinto,Tannat Especial,2018,131.31,6,0.05,E-commerce,Sul,PF,Debito,748.47,1
+681,2025-07-19,Tinto,Malbec Premium,2012,336.51,31,0.05,E-commerce,Sudeste,PJ,Pix,9910.22,1
+682,2024-08-31,Tinto,Merlot Classico,2015,131.32,9,0.0,Loja Fisica,Sudeste,PF,Credito,1181.88,0
+683,2026-03-07,Branco,Riesling Doce,2000,223.64,9,0.1,E-commerce,Sudeste,PF,Debito,1811.48,0
+684,2025-06-10,Tinto,Merlot Classico,2001,251.77,3,0.25,Loja Fisica,Norte,PF,Credito,566.48,0
+685,2026-04-22,Branco,Sauvignon Blanc,2005,139.33,7,0.0,E-commerce,Sudeste,PF,Credito,975.31,0
+686,2024-11-11,Espumante,Moscatel Doce,2005,191.7,9,0.0,E-commerce,Sudeste,PF,Credito,1725.3,1
+687,2026-02-09,Tinto,Tannat Especial,2012,91.72,4,0.1,Loja Fisica,Sudeste,PF,Credito,330.19,1
+688,2025-04-27,Branco,Sauvignon Blanc,2000,122.37,11,0.1,E-commerce,Sudeste,PF,Debito,1211.46,1
+689,2025-07-09,Tinto,Tannat Especial,2010,151.37,35,0.1,Loja Fisica,Nordeste,PJ,Boleto,4768.15,0
+690,2024-09-30,Branco,Sauvignon Blanc,2022,62.63,10,0.1,Loja Fisica,Sudeste,PF,Credito,563.67,0
+691,2025-03-24,Tinto,Tannat Especial,2017,298.28,3,0.25,E-commerce,Sudeste,PF,Pix,671.13,1
+692,2025-05-27,Branco,Chardonnay Safra,2008,184.16,11,0.0,E-commerce,Sul,PF,Pix,2025.76,1
+693,2025-11-04,Branco,Chardonnay Safra,2006,233.31,4,0.0,E-commerce,Sul,PF,Credito,933.24,0
+694,2025-09-07,Tinto,Malbec Premium,2021,232.14,1,0.0,E-commerce,Sul,PF,Pix,232.14,1
+695,2025-02-24,Branco,Riesling Doce,2017,195.72,10,0.1,E-commerce,Sul,PF,Pix,1761.48,0
+696,2026-04-02,Branco,Riesling Doce,2006,164.51,3,0.0,Loja Fisica,Sul,PF,Debito,493.53,0
+697,2024-05-29,Tinto,Malbec Premium,2012,126.76,3,0.05,E-commerce,Sudeste,PF,Debito,361.27,1
+698,2024-11-03,Branco,Riesling Doce,2019,97.38,8,0.15,Loja Fisica,Centro-Oeste,PF,Credito,662.18,0
+699,2026-04-01,Espumante,Brut Tradicional,2014,106.91,3,0.0,Loja Fisica,Nordeste,PF,Debito,320.73,1
+700,2024-08-07,Tinto,Cabernet Reserva,2017,185.67,35,0.2,Eventos,Sul,PJ,Pix,5198.76,1
+701,2026-02-06,Branco,Chardonnay Safra,2019,70.23,33,0.0,E-commerce,Sul,PJ,Debito,2317.59,1
+702,2026-04-11,Tinto,Tannat Especial,2009,87.37,6,0.0,Loja Fisica,Sul,PF,Boleto,524.22,0
+703,2026-04-13,Espumante,Moscatel Doce,2014,167.83,3,0.1,Loja Fisica,Sudeste,PF,Debito,453.14,0
+704,2024-07-13,Tinto,Merlot Classico,2002,279.4,2,0.2,Loja Fisica,Sudeste,PF,Debito,447.04,0
+705,2024-06-16,Branco,Chardonnay Safra,2009,121.9,8,0.05,Loja Fisica,Sudeste,PJ,Boleto,926.44,1
+706,2024-07-07,Espumante,Brut Tradicional,2020,133.51,4,0.05,Loja Fisica,Sudeste,PF,Credito,507.34,1
+707,2024-01-11,Tinto,Tannat Especial,2017,335.79,10,0.05,Loja Fisica,Sudeste,PF,Pix,3190.01,0
+708,2024-07-03,Branco,Riesling Doce,2005,248.76,33,0.0,Loja Fisica,Sul,PJ,Debito,8209.08,0
+709,2025-12-14,Rose,Rose Provence,2017,105.3,2,0.0,Distribuidor,Sudeste,PF,Pix,210.6,1
+710,2025-05-03,Tinto,Merlot Classico,2011,170.57,7,0.0,Distribuidor,Nordeste,PF,Credito,1193.99,1
+711,2024-08-05,Tinto,Tannat Especial,2015,233.41,11,0.0,E-commerce,Sudeste,PF,Credito,2567.51,1
+712,2025-05-12,Espumante,Moscatel Doce,2009,303.91,24,0.0,E-commerce,Sul,PJ,Pix,7293.84,1
+713,2024-01-06,Tinto,Merlot Classico,2007,203.89,10,0.2,Eventos,Nordeste,PF,Boleto,1631.12,1
+714,2025-07-20,Tinto,Malbec Premium,2003,142.84,7,0.1,Loja Fisica,Sudeste,PF,Pix,899.89,1
+715,2025-08-29,Tinto,Malbec Premium,2008,286.23,8,0.1,Distribuidor,Sudeste,PJ,Pix,2060.86,1
+716,2025-09-17,Branco,Chardonnay Safra,2020,241.36,16,0.0,Eventos,Sul,PJ,Pix,3861.76,1
+717,2025-01-17,Branco,Sauvignon Blanc,2017,97.39,15,0.05,E-commerce,Nordeste,PJ,Credito,1387.81,1
+718,2025-04-09,Tinto,Malbec Premium,2002,342.73,4,0.2,E-commerce,Sul,PF,Credito,1096.74,1
+719,2025-01-06,Tinto,Tannat Especial,2006,167.73,11,0.0,E-commerce,Sudeste,PF,Credito,1845.03,1
+720,2024-08-18,Tinto,Malbec Premium,2003,318.66,25,0.1,E-commerce,Sudeste,PJ,Boleto,7169.85,0
+721,2024-10-19,Tinto,Malbec Premium,2013,90.94,7,0.0,Loja Fisica,Norte,PF,Credito,636.58,0
+722,2025-10-31,Tinto,Tannat Especial,2016,273.21,36,0.0,E-commerce,Sul,PJ,Credito,9835.56,1
+723,2024-06-17,Tinto,Malbec Premium,2000,166.21,9,0.0,E-commerce,Sudeste,PF,Credito,1495.89,0
+724,2024-07-07,Tinto,Cabernet Reserva,2008,249.01,11,0.05,Loja Fisica,Sudeste,PF,Pix,2602.15,0
+725,2024-09-03,Branco,Chardonnay Safra,2021,97.42,2,0.15,E-commerce,Nordeste,PF,Boleto,165.61,1
+726,2025-03-13,Tinto,Merlot Classico,2010,325.17,4,0.1,Distribuidor,Sul,PF,Credito,1170.61,1
+727,2025-12-04,Rose,Rose Provence,2007,151.76,11,0.2,E-commerce,Sudeste,PF,Credito,1335.49,1
+728,2026-02-20,Rose,Rose Brasileiro,2009,155.38,1,0.1,Loja Fisica,Sudeste,PF,Pix,139.84,0
+729,2024-03-14,Branco,Chardonnay Safra,2019,82.18,15,0.05,Loja Fisica,Sudeste,PJ,Boleto,1171.07,1
+730,2024-08-15,Tinto,Cabernet Reserva,2016,101.39,8,0.2,Distribuidor,Sudeste,PF,Boleto,648.9,1
+731,2025-07-15,Tinto,Tannat Especial,2001,292.51,1,0.0,Distribuidor,Sudeste,PF,Debito,292.51,1
+732,2024-08-26,Tinto,Merlot Classico,2020,342.12,10,0.05,E-commerce,Sul,PF,Credito,3250.14,1
+733,2024-02-01,Tinto,Merlot Classico,2023,195.76,2,0.0,Loja Fisica,Centro-Oeste,PF,Credito,391.52,1
+734,2026-01-23,Tinto,Cabernet Reserva,2015,211.83,3,0.0,Loja Fisica,Sul,PF,Boleto,635.49,0
+735,2024-08-30,Tinto,Malbec Premium,2008,208.72,1,0.0,Distribuidor,Sudeste,PF,Debito,208.72,1
+736,2024-05-14,Tinto,Merlot Classico,2017,118.14,10,0.0,Eventos,Sul,PF,Credito,1181.4,0
+737,2025-10-17,Tinto,Merlot Classico,2004,291.55,11,0.2,Distribuidor,Nordeste,PF,Credito,2565.64,0
+738,2025-12-16,Tinto,Cabernet Reserva,2001,338.45,1,0.05,E-commerce,Nordeste,PF,Credito,321.53,1
+739,2024-11-18,Tinto,Merlot Classico,2013,114.7,5,0.0,Eventos,Sudeste,PF,Pix,573.5,1
+740,2024-01-13,Tinto,Cabernet Reserva,2009,166.24,19,0.25,Loja Fisica,Sul,PJ,Pix,2368.92,0
+741,2024-08-04,Tinto,Malbec Premium,2023,235.41,1,0.05,Loja Fisica,Sul,PF,Credito,223.64,1
+742,2025-09-19,Branco,Chardonnay Safra,2004,226.75,5,0.05,Loja Fisica,Sul,PF,Pix,1077.06,1
+743,2024-06-17,Tinto,Merlot Classico,2023,123.61,8,0.05,Loja Fisica,Sudeste,PF,Credito,939.44,0
+744,2025-07-05,Rose,Rose Brasileiro,2002,116.51,11,0.0,E-commerce,Sudeste,PF,Credito,1281.61,0
+745,2025-11-27,Rose,Rose Brasileiro,2015,118.03,9,0.05,E-commerce,Sudeste,PF,Pix,1009.16,1
+746,2024-09-24,Tinto,Merlot Classico,2017,297.89,21,0.0,E-commerce,Sul,PJ,Debito,6255.69,1
+747,2025-05-02,Tinto,Cabernet Reserva,2005,128.65,28,0.15,Loja Fisica,Centro-Oeste,PJ,Credito,3061.87,1
+748,2025-11-23,Tinto,Tannat Especial,2011,154.14,1,0.05,Loja Fisica,Sudeste,PF,Debito,146.43,0
+749,2026-02-18,Tinto,Malbec Premium,2006,85.28,5,0.0,E-commerce,Nordeste,PF,Pix,426.4,1
+750,2026-04-30,Espumante,Brut Tradicional,2007,245.71,37,0.1,Distribuidor,Sudeste,PJ,Pix,8182.14,1
+751,2025-09-15,Tinto,Merlot Classico,2023,309.03,4,0.1,Loja Fisica,Sudeste,PF,Pix,1112.51,1
+752,2025-04-08,Branco,Riesling Doce,2020,187.76,1,0.0,Loja Fisica,Sul,PF,Debito,187.76,1
+753,2024-10-26,Tinto,Merlot Classico,2018,288.25,7,0.0,E-commerce,Sudeste,PF,Credito,2017.75,1
+754,2024-03-15,Tinto,Tannat Especial,2012,302.11,7,0.0,Loja Fisica,Sudeste,PF,Boleto,2114.77,1
+755,2024-11-22,Espumante,Moscatel Doce,2012,106.94,6,0.0,E-commerce,Norte,PF,Credito,641.64,1
+756,2025-07-25,Rose,Rose Brasileiro,2007,111.8,1,0.2,Loja Fisica,Sudeste,PF,Boleto,89.44,0
+757,2024-09-06,Espumante,Brut Tradicional,2000,286.5,11,0.2,Loja Fisica,Sudeste,PF,Pix,2521.2,0
+758,2026-03-19,Branco,Chardonnay Safra,2021,65.33,6,0.0,Loja Fisica,Sudeste,PF,Boleto,391.98,1
+759,2025-12-21,Tinto,Merlot Classico,2003,349.38,1,0.1,Loja Fisica,Nordeste,PF,Credito,314.44,0
+760,2026-02-09,Tinto,Merlot Classico,2007,270.0,8,0.05,Distribuidor,Nordeste,PF,Pix,2052.0,1
+761,2026-04-17,Espumante,Brut Tradicional,2018,110.21,28,0.0,E-commerce,Sul,PJ,Boleto,3085.88,0
+762,2025-09-23,Branco,Chardonnay Safra,2007,190.12,4,0.1,E-commerce,Sudeste,PF,Pix,684.43,0
+763,2025-09-23,Tinto,Malbec Premium,2022,323.51,2,0.0,Loja Fisica,Sudeste,PF,Credito,647.02,0
+764,2025-08-20,Tinto,Merlot Classico,2011,336.29,8,0.05,Distribuidor,Sul,PF,Credito,2555.8,1
+765,2026-02-17,Tinto,Merlot Classico,2001,183.95,6,0.0,Loja Fisica,Sul,PF,Credito,1103.7,0
+766,2024-07-08,Rose,Rose Brasileiro,2019,170.93,3,0.0,E-commerce,Sudeste,PF,Pix,512.79,1
+767,2026-04-23,Tinto,Cabernet Reserva,2018,179.32,9,0.1,E-commerce,Centro-Oeste,PF,Debito,1452.49,1
+768,2024-05-27,Espumante,Brut Tradicional,2006,388.73,3,0.2,Eventos,Sudeste,PF,Debito,932.95,0
+769,2025-07-23,Espumante,Moscatel Doce,2011,298.7,9,0.0,E-commerce,Nordeste,PF,Pix,2688.3,1
+770,2024-12-26,Tinto,Cabernet Reserva,2007,304.17,4,0.0,E-commerce,Sudeste,PF,Debito,1216.68,1
+771,2025-03-25,Tinto,Cabernet Reserva,2004,205.01,3,0.0,E-commerce,Sul,PF,Debito,615.03,0
+772,2025-10-25,Tinto,Malbec Premium,2012,304.34,1,0.15,E-commerce,Sudeste,PF,Credito,258.69,1
+773,2026-01-04,Tinto,Merlot Classico,2002,151.81,36,0.1,Loja Fisica,Sudeste,PJ,Credito,4918.64,1
+774,2025-01-07,Branco,Riesling Doce,2017,143.67,23,0.0,Loja Fisica,Sudeste,PJ,Credito,3304.41,1
+775,2025-01-24,Tinto,Tannat Especial,2012,254.05,3,0.0,Distribuidor,Centro-Oeste,PJ,Debito,762.15,0
+776,2024-08-15,Rose,Rose Brasileiro,2002,73.64,7,0.0,Eventos,Nordeste,PF,Boleto,515.48,0
+777,2026-03-12,Tinto,Merlot Classico,2017,181.92,10,0.25,Loja Fisica,Sudeste,PF,Credito,1364.4,0
+778,2024-03-19,Tinto,Cabernet Reserva,2004,315.88,5,0.0,Loja Fisica,Centro-Oeste,PF,Credito,1579.4,0
+779,2024-09-07,Branco,Chardonnay Safra,2016,220.86,5,0.05,E-commerce,Sudeste,PF,Boleto,1049.09,1
+780,2025-03-01,Branco,Chardonnay Safra,2005,226.44,1,0.0,Loja Fisica,Sudeste,PF,Pix,226.44,1
+781,2025-11-15,Tinto,Merlot Classico,2018,171.64,6,0.2,Loja Fisica,Sudeste,PF,Pix,823.87,1
+782,2025-05-16,Tinto,Tannat Especial,2013,258.02,1,0.25,E-commerce,Sudeste,PF,Credito,193.51,1
+783,2025-05-06,Branco,Sauvignon Blanc,2018,87.85,37,0.15,Loja Fisica,Sudeste,PJ,Credito,2762.88,1
+784,2025-08-06,Espumante,Brut Tradicional,2006,312.82,3,0.1,Loja Fisica,Sul,PF,Credito,844.61,1
+785,2024-08-16,Rose,Rose Provence,2012,107.23,2,0.0,Loja Fisica,Sul,PF,Credito,214.46,0
+786,2025-12-15,Tinto,Merlot Classico,2004,145.4,4,0.15,E-commerce,Sudeste,PF,Pix,494.36,0
+787,2024-02-03,Branco,Riesling Doce,2000,95.01,4,0.05,Loja Fisica,Sudeste,PF,Debito,361.04,0
+788,2024-02-06,Tinto,Tannat Especial,2015,289.85,1,0.25,Loja Fisica,Sudeste,PF,Credito,217.39,0
+789,2024-01-26,Tinto,Malbec Premium,2007,139.22,9,0.1,Loja Fisica,Sul,PF,Credito,1127.68,0
+790,2026-02-14,Tinto,Malbec Premium,2014,99.99,6,0.25,Loja Fisica,Sudeste,PF,Pix,449.95,1
+791,2025-06-14,Tinto,Merlot Classico,2014,303.8,17,0.05,Eventos,Sul,PJ,Credito,4906.37,1
+792,2024-04-29,Espumante,Brut Tradicional,2021,105.8,29,0.2,E-commerce,Nordeste,PJ,Boleto,2454.56,1
+793,2024-12-01,Branco,Riesling Doce,2004,143.67,13,0.0,Distribuidor,Sul,PJ,Credito,1867.71,1
+794,2025-04-19,Tinto,Cabernet Reserva,2005,141.79,2,0.0,Loja Fisica,Sudeste,PF,Credito,283.58,0
+795,2024-11-04,Tinto,Merlot Classico,2022,191.75,9,0.0,E-commerce,Sul,PF,Credito,1725.75,0
+796,2025-06-06,Branco,Riesling Doce,2008,108.71,16,0.0,Distribuidor,Sudeste,PJ,Pix,1739.36,0
+797,2024-08-08,Tinto,Malbec Premium,2012,309.08,8,0.0,E-commerce,Sul,PF,Pix,2472.64,1
+798,2024-05-07,Branco,Chardonnay Safra,2020,242.09,9,0.2,E-commerce,Sudeste,PF,Pix,1743.05,1
+799,2026-02-01,Tinto,Cabernet Reserva,2022,335.73,9,0.1,Eventos,Norte,PF,Credito,2719.41,0
+800,2026-03-14,Branco,Riesling Doce,2003,151.04,4,0.0,Loja Fisica,Nordeste,PF,Credito,604.16,0
+801,2026-02-02,Branco,Chardonnay Safra,2013,214.92,5,0.15,Loja Fisica,Sudeste,PF,Pix,913.41,1
+802,2025-09-04,Espumante,Moscatel Doce,2018,310.06,6,0.0,E-commerce,Sudeste,PF,Credito,1860.36,1
+803,2024-08-12,Tinto,Merlot Classico,2009,276.97,8,0.25,Eventos,Sudeste,PF,Debito,1661.82,0
+804,2024-11-06,Branco,Riesling Doce,2010,153.5,9,0.0,E-commerce,Sudeste,PF,Pix,1381.5,0
+805,2024-12-15,Tinto,Cabernet Reserva,2017,344.06,28,0.05,Distribuidor,Sudeste,PJ,Credito,9152.0,1
+806,2025-10-01,Tinto,Malbec Premium,2013,162.25,4,0.1,Eventos,Sul,PJ,Debito,584.1,0
+807,2024-07-17,Branco,Chardonnay Safra,2003,138.46,4,0.0,E-commerce,Nordeste,PJ,Credito,553.84,0
+808,2025-03-30,Tinto,Cabernet Reserva,2000,145.48,30,0.25,Loja Fisica,Sudeste,PJ,Debito,3273.3,0
+809,2025-06-07,Tinto,Merlot Classico,2022,126.71,10,0.05,Loja Fisica,Sul,PF,Pix,1203.74,1
+810,2024-02-25,Tinto,Merlot Classico,2001,222.83,5,0.05,Loja Fisica,Norte,PF,Pix,1058.44,0
+811,2024-06-01,Tinto,Merlot Classico,2006,306.77,9,0.1,E-commerce,Sul,PF,Credito,2484.84,1
+812,2024-08-09,Tinto,Merlot Classico,2013,170.01,3,0.0,Eventos,Sul,PF,Boleto,510.03,0
+813,2025-05-07,Tinto,Tannat Especial,2010,268.6,18,0.1,E-commerce,Sudeste,PJ,Credito,4351.32,1
+814,2026-02-07,Branco,Riesling Doce,2013,68.4,4,0.15,Distribuidor,Nordeste,PF,Credito,232.56,1
+815,2024-08-08,Tinto,Malbec Premium,2006,135.73,11,0.15,Loja Fisica,Sudeste,PF,Debito,1269.08,1
+816,2025-03-18,Tinto,Cabernet Reserva,2020,137.98,3,0.0,E-commerce,Centro-Oeste,PF,Boleto,413.94,1
+817,2025-04-15,Tinto,Merlot Classico,2016,343.55,9,0.0,Loja Fisica,Sudeste,PF,Pix,3091.95,1
+818,2025-08-10,Espumante,Moscatel Doce,2015,267.22,8,0.05,E-commerce,Sul,PF,Pix,2030.87,1
+819,2025-10-04,Tinto,Tannat Especial,2008,191.57,11,0.1,E-commerce,Sudeste,PF,Boleto,1896.54,0
+820,2025-12-24,Branco,Riesling Doce,2014,100.43,29,0.05,Loja Fisica,Centro-Oeste,PJ,Debito,2766.85,1
+821,2026-04-14,Tinto,Cabernet Reserva,2009,170.46,8,0.1,Loja Fisica,Sul,PF,Credito,1227.31,0
+822,2026-04-08,Tinto,Cabernet Reserva,2020,234.97,9,0.05,E-commerce,Sul,PF,Credito,2008.99,0
+823,2025-10-28,Tinto,Tannat Especial,2016,123.97,9,0.2,Loja Fisica,Centro-Oeste,PF,Credito,892.58,1
+824,2024-06-26,Tinto,Merlot Classico,2022,220.41,39,0.1,Eventos,Sul,PJ,Credito,7736.39,1
+825,2026-03-26,Tinto,Cabernet Reserva,2003,99.74,20,0.0,Eventos,Sudeste,PJ,Credito,1994.8,1
+826,2024-04-27,Tinto,Cabernet Reserva,2018,147.37,6,0.15,E-commerce,Nordeste,PF,Credito,751.59,1
+827,2024-03-12,Tinto,Cabernet Reserva,2022,132.54,7,0.1,Distribuidor,Centro-Oeste,PF,Boleto,835.0,1
+828,2024-05-13,Tinto,Malbec Premium,2010,281.83,10,0.2,Eventos,Sul,PF,Credito,2254.64,1
+829,2025-05-19,Tinto,Cabernet Reserva,2009,327.03,2,0.0,Loja Fisica,Sul,PF,Credito,654.06,1
+830,2026-03-18,Branco,Riesling Doce,2016,112.77,10,0.0,E-commerce,Sudeste,PF,Credito,1127.7,1
+831,2024-11-30,Branco,Chardonnay Safra,2016,186.8,5,0.0,Loja Fisica,Sudeste,PF,Credito,934.0,0
+832,2024-09-26,Rose,Rose Provence,2022,183.14,4,0.0,Loja Fisica,Sudeste,PF,Debito,732.56,1
+833,2025-04-08,Tinto,Cabernet Reserva,2016,233.37,34,0.15,Loja Fisica,Centro-Oeste,PJ,Credito,6744.39,1
+834,2025-06-28,Tinto,Cabernet Reserva,2019,109.57,4,0.05,Loja Fisica,Sul,PF,Pix,416.37,0
+835,2025-04-27,Tinto,Cabernet Reserva,2015,118.04,14,0.0,E-commerce,Sudeste,PJ,Debito,1652.56,1
+836,2026-01-21,Espumante,Brut Tradicional,2016,125.81,2,0.2,Distribuidor,Sudeste,PF,Pix,201.3,1
+837,2026-02-05,Tinto,Merlot Classico,2002,284.38,10,0.0,E-commerce,Sudeste,PF,Boleto,2843.8,1
+838,2025-04-11,Tinto,Malbec Premium,2017,305.83,3,0.05,Loja Fisica,Sudeste,PF,Debito,871.62,1
+839,2025-04-26,Tinto,Cabernet Reserva,2023,237.34,2,0.05,Loja Fisica,Sudeste,PF,Credito,450.95,1
+840,2025-01-05,Branco,Chardonnay Safra,2013,203.78,8,0.25,E-commerce,Sul,PF,Debito,1222.68,0
+841,2024-05-24,Tinto,Merlot Classico,2004,272.4,14,0.2,E-commerce,Nordeste,PJ,Pix,3050.88,1
+842,2025-03-01,Branco,Chardonnay Safra,2022,222.8,8,0.0,E-commerce,Sudeste,PF,Pix,1782.4,1
+843,2025-12-18,Tinto,Cabernet Reserva,2018,143.18,6,0.25,E-commerce,Norte,PF,Debito,644.31,0
+844,2024-01-22,Tinto,Cabernet Reserva,2010,295.63,4,0.2,Distribuidor,Sul,PF,Pix,946.02,1
+845,2024-09-18,Branco,Riesling Doce,2010,189.21,7,0.0,Loja Fisica,Sudeste,PJ,Credito,1324.47,0
+846,2024-03-18,Espumante,Moscatel Doce,2022,366.71,4,0.1,Loja Fisica,Norte,PF,Credito,1320.16,0
+847,2025-07-11,Espumante,Brut Tradicional,2009,245.97,1,0.05,E-commerce,Nordeste,PF,Debito,233.67,1
+848,2025-11-13,Tinto,Cabernet Reserva,2019,201.31,6,0.0,E-commerce,Sudeste,PF,Credito,1207.86,0
+849,2024-05-28,Tinto,Tannat Especial,2022,97.12,6,0.15,Distribuidor,Sul,PF,Pix,495.31,1
+850,2026-03-03,Tinto,Merlot Classico,2003,326.87,1,0.05,E-commerce,Centro-Oeste,PF,Debito,310.53,1
+851,2025-10-23,Tinto,Tannat Especial,2013,144.87,4,0.2,Loja Fisica,Sul,PF,Credito,463.58,0
+852,2025-03-26,Tinto,Malbec Premium,2022,123.96,7,0.05,E-commerce,Norte,PF,Debito,824.33,1
+853,2024-11-07,Branco,Chardonnay Safra,2019,192.02,1,0.1,Eventos,Sudeste,PF,Pix,172.82,1
+854,2024-02-02,Branco,Sauvignon Blanc,2002,240.29,9,0.0,Loja Fisica,Centro-Oeste,PF,Credito,2162.61,1
+855,2024-01-07,Tinto,Merlot Classico,2017,228.79,10,0.1,Loja Fisica,Norte,PF,Debito,2059.11,0
+856,2025-07-06,Branco,Sauvignon Blanc,2016,200.03,15,0.0,Distribuidor,Sul,PJ,Credito,3000.45,0
+857,2024-07-26,Tinto,Malbec Premium,2021,202.91,8,0.1,Distribuidor,Sudeste,PF,Credito,1460.95,0
+858,2026-03-14,Branco,Riesling Doce,2000,109.4,28,0.1,Distribuidor,Sudeste,PJ,Debito,2756.88,1
+859,2024-11-03,Branco,Chardonnay Safra,2003,143.2,20,0.05,E-commerce,Sudeste,PJ,Credito,2720.8,1
+860,2024-02-07,Tinto,Merlot Classico,2015,255.35,11,0.05,Distribuidor,Sudeste,PF,Pix,2668.41,1
+861,2024-02-13,Tinto,Tannat Especial,2005,281.21,11,0.0,Loja Fisica,Norte,PF,Credito,3093.31,1
+862,2025-09-12,Tinto,Cabernet Reserva,2013,265.22,9,0.0,E-commerce,Sudeste,PF,Debito,2386.98,1
+863,2025-05-26,Espumante,Brut Tradicional,2007,370.73,10,0.05,Loja Fisica,Sul,PF,Credito,3521.93,0
+864,2025-03-15,Tinto,Malbec Premium,2006,185.94,8,0.05,Loja Fisica,Sul,PF,Debito,1413.14,1
+865,2026-04-22,Tinto,Merlot Classico,2016,146.89,7,0.05,Loja Fisica,Sudeste,PF,Credito,976.82,1
+866,2026-03-18,Tinto,Merlot Classico,2004,212.56,2,0.05,Eventos,Sudeste,PF,Credito,403.86,1
+867,2024-08-25,Tinto,Malbec Premium,2010,265.98,5,0.05,Eventos,Centro-Oeste,PF,Pix,1263.4,0
+868,2024-10-24,Tinto,Cabernet Reserva,2018,261.51,1,0.15,Eventos,Sudeste,PF,Pix,222.28,1
+869,2025-06-01,Tinto,Malbec Premium,2018,149.27,5,0.0,Distribuidor,Nordeste,PF,Credito,746.35,0
+870,2024-10-04,Tinto,Merlot Classico,2003,176.8,11,0.0,Loja Fisica,Sudeste,PJ,Debito,1944.8,1
+871,2025-04-12,Tinto,Cabernet Reserva,2003,90.49,7,0.0,Loja Fisica,Sudeste,PF,Credito,633.43,1
+872,2024-04-21,Branco,Sauvignon Blanc,2004,70.66,5,0.05,Distribuidor,Sul,PF,Credito,335.63,1
+873,2025-02-23,Rose,Rose Provence,2023,116.7,10,0.0,E-commerce,Nordeste,PF,Boleto,1167.0,1
+874,2025-03-27,Tinto,Cabernet Reserva,2012,170.49,9,0.15,Loja Fisica,Sudeste,PF,Credito,1304.25,1
+875,2025-07-15,Tinto,Merlot Classico,2016,311.28,8,0.15,Loja Fisica,Sul,PF,Credito,2116.7,1
+876,2024-12-18,Branco,Sauvignon Blanc,2006,91.56,3,0.0,Distribuidor,Nordeste,PF,Credito,274.68,1
+877,2024-03-27,Branco,Chardonnay Safra,2019,247.06,2,0.05,Loja Fisica,Sul,PF,Credito,469.41,1
+878,2026-04-04,Tinto,Malbec Premium,2010,295.48,6,0.2,E-commerce,Nordeste,PF,Credito,1418.3,1
+879,2024-05-13,Branco,Sauvignon Blanc,2014,185.26,3,0.0,Eventos,Sudeste,PF,Credito,555.78,0
+880,2025-12-28,Rose,Rose Provence,2011,148.03,6,0.0,Loja Fisica,Sul,PF,Debito,888.18,1
+881,2024-08-26,Tinto,Tannat Especial,2000,292.9,32,0.2,Loja Fisica,Sudeste,PJ,Debito,7498.24,0
+882,2026-04-24,Rose,Rose Provence,2020,173.02,22,0.15,E-commerce,Norte,PJ,Credito,3235.47,0
+883,2024-12-06,Tinto,Cabernet Reserva,2017,338.36,4,0.0,E-commerce,Sul,PJ,Pix,1353.44,0
+884,2025-04-17,Tinto,Merlot Classico,2015,277.42,7,0.0,Loja Fisica,Sul,PF,Credito,1941.94,0
+885,2024-04-26,Tinto,Malbec Premium,2019,239.7,8,0.15,Loja Fisica,Sul,PF,Debito,1629.96,0
+886,2024-05-07,Tinto,Cabernet Reserva,2021,338.32,4,0.0,Loja Fisica,Sul,PF,Credito,1353.28,1
+887,2024-11-25,Tinto,Tannat Especial,2002,189.68,5,0.05,Distribuidor,Sul,PF,Debito,900.98,0
+888,2026-01-14,Tinto,Cabernet Reserva,2021,266.41,11,0.0,Loja Fisica,Nordeste,PF,Credito,2930.51,1
+889,2026-03-08,Branco,Chardonnay Safra,2001,173.72,8,0.15,E-commerce,Sudeste,PF,Credito,1181.3,1
+890,2025-08-24,Branco,Chardonnay Safra,2005,117.53,7,0.0,Distribuidor,Sudeste,PF,Credito,822.71,1
+891,2026-02-06,Tinto,Malbec Premium,2009,299.65,36,0.05,Distribuidor,Sudeste,PJ,Credito,10248.03,1
+892,2025-03-02,Tinto,Malbec Premium,2012,139.25,8,0.2,E-commerce,Sudeste,PF,Credito,891.2,1
+893,2025-09-27,Tinto,Merlot Classico,2017,339.96,3,0.0,Loja Fisica,Sudeste,PF,Debito,1019.88,1
+894,2024-08-27,Branco,Riesling Doce,2005,63.38,37,0.05,Loja Fisica,Norte,PJ,Boleto,2227.81,0
+895,2024-04-09,Tinto,Cabernet Reserva,2001,275.29,37,0.05,Loja Fisica,Nordeste,PJ,Pix,9676.44,1
+896,2025-03-02,Tinto,Cabernet Reserva,2016,255.65,3,0.0,Loja Fisica,Norte,PF,Credito,766.95,0
+897,2024-11-15,Tinto,Tannat Especial,2012,166.23,11,0.2,E-commerce,Sul,PF,Credito,1462.82,1
+898,2024-11-28,Rose,Rose Brasileiro,2000,189.45,1,0.1,Distribuidor,Sudeste,PF,Credito,170.5,0
+899,2025-04-29,Tinto,Tannat Especial,2006,343.73,6,0.0,E-commerce,Nordeste,PF,Pix,2062.38,1
+900,2024-06-02,Rose,Rose Brasileiro,2020,130.33,2,0.25,Loja Fisica,Sudeste,PF,Boleto,195.5,0
+901,2024-07-28,Rose,Rose Provence,2002,141.22,9,0.1,E-commerce,Sudeste,PF,Pix,1143.88,1
+902,2025-08-05,Tinto,Tannat Especial,2015,185.82,11,0.1,Distribuidor,Sudeste,PJ,Pix,1839.62,1
+903,2026-04-24,Tinto,Malbec Premium,2018,303.29,3,0.0,Eventos,Sudeste,PF,Debito,909.87,1
+904,2026-02-19,Tinto,Merlot Classico,2021,231.38,7,0.0,Loja Fisica,Centro-Oeste,PF,Credito,1619.66,1
+905,2024-04-28,Tinto,Cabernet Reserva,2006,190.34,6,0.25,Loja Fisica,Sul,PF,Credito,856.53,1
+906,2025-05-09,Tinto,Malbec Premium,2015,348.63,22,0.0,Eventos,Nordeste,PJ,Boleto,7669.86,0
+907,2026-02-19,Rose,Rose Brasileiro,2008,147.5,3,0.1,E-commerce,Nordeste,PF,Debito,398.25,1
+908,2024-09-30,Tinto,Cabernet Reserva,2019,265.8,4,0.0,E-commerce,Sul,PF,Credito,1063.2,1
+909,2024-11-02,Tinto,Merlot Classico,2006,301.39,7,0.05,Loja Fisica,Sudeste,PF,Credito,2004.24,1
+910,2025-04-05,Branco,Chardonnay Safra,2011,133.64,10,0.05,Loja Fisica,Sudeste,PF,Debito,1269.58,0
+911,2025-03-18,Tinto,Tannat Especial,2004,201.26,4,0.15,E-commerce,Sul,PF,Pix,684.28,1
+912,2024-11-06,Espumante,Brut Tradicional,2003,265.98,2,0.1,E-commerce,Sudeste,PF,Pix,478.76,0
+913,2026-03-27,Branco,Chardonnay Safra,2006,175.94,28,0.0,Distribuidor,Sudeste,PJ,Boleto,4926.32,1
+914,2025-09-16,Tinto,Cabernet Reserva,2011,248.82,2,0.0,E-commerce,Sul,PF,Pix,497.64,1
+915,2026-03-14,Tinto,Cabernet Reserva,2005,201.91,6,0.0,Loja Fisica,Sul,PF,Pix,1211.46,1
+916,2024-10-24,Tinto,Malbec Premium,2011,109.04,9,0.0,E-commerce,Norte,PF,Boleto,981.36,1
+917,2026-01-06,Tinto,Tannat Especial,2014,113.64,11,0.0,E-commerce,Sul,PF,Credito,1250.04,1
+918,2025-07-30,Tinto,Malbec Premium,2011,213.75,7,0.15,Loja Fisica,Sudeste,PJ,Boleto,1271.81,1
+919,2024-03-25,Tinto,Merlot Classico,2017,244.19,6,0.15,E-commerce,Norte,PF,Boleto,1245.37,1
+920,2024-09-05,Tinto,Cabernet Reserva,2013,146.23,5,0.0,E-commerce,Sudeste,PF,Credito,731.15,1
+921,2026-03-29,Tinto,Merlot Classico,2015,192.43,11,0.0,E-commerce,Sudeste,PF,Pix,2116.73,1
+922,2024-11-20,Espumante,Moscatel Doce,2023,397.77,10,0.15,Loja Fisica,Sudeste,PF,Pix,3381.04,1
+923,2024-10-05,Espumante,Moscatel Doce,2023,330.27,10,0.15,Loja Fisica,Sul,PF,Pix,2807.29,1
+924,2025-11-05,Tinto,Merlot Classico,2008,264.49,4,0.15,E-commerce,Centro-Oeste,PF,Credito,899.27,0
+925,2025-02-24,Tinto,Tannat Especial,2011,178.41,6,0.1,Loja Fisica,Sudeste,PF,Debito,963.41,0
+926,2024-10-18,Tinto,Cabernet Reserva,2012,323.0,16,0.0,E-commerce,Nordeste,PJ,Credito,5168.0,1
+927,2024-04-06,Espumante,Brut Tradicional,2011,354.4,3,0.2,E-commerce,Nordeste,PF,Pix,850.56,0
+928,2025-10-06,Tinto,Merlot Classico,2020,92.53,8,0.0,Eventos,Sul,PF,Credito,740.24,0
+929,2026-04-24,Espumante,Brut Tradicional,2020,263.77,7,0.05,E-commerce,Sudeste,PF,Credito,1754.07,1
+930,2026-01-07,Tinto,Cabernet Reserva,2002,332.19,9,0.1,E-commerce,Sudeste,PF,Credito,2690.74,1
+931,2024-11-09,Branco,Riesling Doce,2020,236.33,6,0.0,Loja Fisica,Sul,PF,Debito,1417.98,1
+932,2025-04-21,Tinto,Merlot Classico,2021,170.97,5,0.15,Loja Fisica,Sul,PF,Boleto,726.62,1
+933,2024-08-28,Branco,Chardonnay Safra,2012,71.3,6,0.0,Loja Fisica,Sul,PF,Debito,427.8,1
+934,2024-02-10,Branco,Sauvignon Blanc,2010,164.17,5,0.05,Loja Fisica,Sul,PF,Pix,779.81,1
+935,2024-01-04,Tinto,Tannat Especial,2009,305.04,1,0.1,Distribuidor,Sudeste,PF,Debito,274.54,1
+936,2025-03-07,Branco,Sauvignon Blanc,2023,183.25,9,0.1,Loja Fisica,Sul,PF,Credito,1484.33,1
+937,2025-01-15,Tinto,Cabernet Reserva,2016,300.48,5,0.15,E-commerce,Sul,PF,Credito,1277.04,0
+938,2024-03-12,Rose,Rose Brasileiro,2023,92.71,7,0.0,E-commerce,Norte,PF,Credito,648.97,1
+939,2024-12-22,Tinto,Malbec Premium,2021,300.79,10,0.0,E-commerce,Centro-Oeste,PF,Debito,3007.9,1
+940,2025-12-19,Branco,Sauvignon Blanc,2013,224.03,4,0.15,E-commerce,Sudeste,PF,Pix,761.7,1
+941,2025-07-17,Branco,Sauvignon Blanc,2011,84.07,9,0.1,E-commerce,Sudeste,PF,Debito,680.97,1
+942,2024-10-30,Tinto,Merlot Classico,2009,278.94,32,0.05,Loja Fisica,Norte,PJ,Debito,8479.78,0
+943,2024-01-30,Tinto,Malbec Premium,2003,198.96,7,0.1,E-commerce,Sudeste,PF,Pix,1253.45,0
+944,2024-06-24,Tinto,Merlot Classico,2006,283.69,10,0.05,E-commerce,Sudeste,PF,Debito,2695.05,1
+945,2026-03-18,Branco,Chardonnay Safra,2013,160.05,2,0.0,E-commerce,Sudeste,PF,Credito,320.1,1
+946,2024-08-01,Espumante,Brut Tradicional,2004,145.48,7,0.05,Distribuidor,Sul,PF,Credito,967.44,0
+947,2024-01-22,Rose,Rose Provence,2004,150.71,39,0.05,Loja Fisica,Sudeste,PJ,Credito,5583.81,1
+948,2024-03-23,Branco,Riesling Doce,2013,203.4,8,0.0,Loja Fisica,Sudeste,PF,Boleto,1627.2,0
+949,2024-10-31,Espumante,Moscatel Doce,2015,248.41,11,0.25,Eventos,Sul,PF,Credito,2049.38,0
+950,2026-03-16,Tinto,Malbec Premium,2001,109.16,9,0.25,Distribuidor,Sul,PF,Credito,736.83,1
+951,2025-06-25,Branco,Riesling Doce,2013,95.37,6,0.1,E-commerce,Sudeste,PF,Debito,515.0,1
+952,2025-01-06,Branco,Chardonnay Safra,2021,128.51,10,0.0,Loja Fisica,Nordeste,PF,Boleto,1285.1,1
+953,2025-06-18,Espumante,Moscatel Doce,2012,115.68,2,0.15,Loja Fisica,Sul,PF,Debito,196.66,1
+954,2025-06-27,Tinto,Cabernet Reserva,2020,143.67,20,0.1,Eventos,Sudeste,PJ,Credito,2586.06,1
+955,2026-03-22,Espumante,Moscatel Doce,2016,306.55,4,0.05,E-commerce,Sul,PF,Credito,1164.89,1
+956,2024-04-07,Espumante,Brut Tradicional,2008,288.27,8,0.05,E-commerce,Sudeste,PF,Credito,2190.85,1
+957,2024-04-29,Branco,Chardonnay Safra,2005,214.05,5,0.0,Loja Fisica,Sul,PF,Debito,1070.25,0
+958,2025-07-10,Tinto,Cabernet Reserva,2003,264.24,7,0.0,E-commerce,Sul,PF,Debito,1849.68,1
+959,2024-02-24,Branco,Chardonnay Safra,2007,160.33,3,0.15,Loja Fisica,Nordeste,PJ,Pix,408.84,1
+960,2024-03-23,Branco,Sauvignon Blanc,2004,125.72,3,0.1,Eventos,Sul,PF,Debito,339.44,0
+961,2024-06-15,Tinto,Tannat Especial,2012,222.57,5,0.25,E-commerce,Sudeste,PF,Boleto,834.64,1
+962,2025-08-14,Espumante,Brut Tradicional,2000,112.01,2,0.05,E-commerce,Sudeste,PF,Credito,212.82,0
+963,2025-09-15,Tinto,Merlot Classico,2005,177.44,37,0.2,Eventos,Sul,PJ,Pix,5252.22,1
+964,2026-04-04,Branco,Riesling Doce,2013,213.65,11,0.1,Loja Fisica,Sudeste,PF,Credito,2115.14,1
+965,2024-05-04,Branco,Chardonnay Safra,2010,155.13,21,0.0,Distribuidor,Sudeste,PJ,Debito,3257.73,1
+966,2025-11-12,Rose,Rose Brasileiro,2010,76.25,5,0.2,Loja Fisica,Sul,PJ,Pix,305.0,1
+967,2025-10-08,Tinto,Malbec Premium,2023,348.86,3,0.2,Loja Fisica,Nordeste,PF,Pix,837.26,0
+968,2026-04-02,Tinto,Cabernet Reserva,2014,269.15,2,0.05,Eventos,Sul,PF,Credito,511.38,1
+969,2024-01-24,Branco,Chardonnay Safra,2020,224.01,6,0.0,Eventos,Sudeste,PF,Credito,1344.06,1
+970,2024-06-07,Tinto,Cabernet Reserva,2011,194.68,10,0.0,E-commerce,Sudeste,PF,Credito,1946.8,1
+971,2024-04-08,Tinto,Merlot Classico,2018,329.52,5,0.15,Eventos,Sudeste,PF,Credito,1400.46,0
+972,2024-12-09,Rose,Rose Brasileiro,2006,81.21,3,0.15,Distribuidor,Nordeste,PF,Debito,207.09,1
+973,2026-04-20,Branco,Riesling Doce,2005,107.63,1,0.1,E-commerce,Sudeste,PF,Pix,96.87,0
+974,2024-11-16,Tinto,Cabernet Reserva,2000,128.72,8,0.1,Eventos,Sudeste,PF,Debito,926.78,0
+975,2024-11-22,Tinto,Malbec Premium,2015,321.44,11,0.15,E-commerce,Sul,PJ,Pix,3005.46,1
+976,2026-01-28,Espumante,Moscatel Doce,2017,252.63,11,0.0,Loja Fisica,Sudeste,PF,Credito,2778.93,1
+977,2024-02-02,Rose,Rose Provence,2006,154.75,11,0.1,E-commerce,Sudeste,PF,Debito,1532.03,1
+978,2025-09-25,Tinto,Merlot Classico,2002,257.52,5,0.1,E-commerce,Sul,PF,Credito,1158.84,0
+979,2025-03-15,Tinto,Tannat Especial,2005,181.4,5,0.0,E-commerce,Sudeste,PF,Debito,907.0,0
+980,2024-04-12,Tinto,Tannat Especial,2000,157.42,9,0.0,Loja Fisica,Sudeste,PF,Debito,1416.78,1
+981,2025-06-01,Tinto,Merlot Classico,2016,95.3,6,0.05,E-commerce,Sul,PF,Pix,543.21,1
+982,2024-11-20,Tinto,Malbec Premium,2000,81.44,10,0.0,E-commerce,Sudeste,PJ,Credito,814.4,0
+983,2026-02-15,Rose,Rose Brasileiro,2021,134.5,10,0.05,E-commerce,Sudeste,PF,Credito,1277.75,1
+984,2024-07-10,Branco,Chardonnay Safra,2004,149.5,24,0.2,E-commerce,Sul,PJ,Credito,2870.4,0
+985,2024-06-29,Branco,Riesling Doce,2020,134.07,11,0.0,Loja Fisica,Sul,PF,Debito,1474.77,1
+986,2025-08-17,Tinto,Malbec Premium,2015,245.41,11,0.05,Loja Fisica,Sudeste,PF,Credito,2564.53,1
+987,2025-03-02,Tinto,Merlot Classico,2000,292.26,7,0.0,Loja Fisica,Centro-Oeste,PF,Credito,2045.82,0
+988,2025-11-29,Tinto,Tannat Especial,2019,312.73,2,0.0,E-commerce,Sudeste,PF,Credito,625.46,1
+989,2024-04-14,Tinto,Merlot Classico,2017,288.92,3,0.0,E-commerce,Sudeste,PF,Pix,866.76,0
+990,2025-03-04,Branco,Riesling Doce,2015,211.37,6,0.1,Loja Fisica,Centro-Oeste,PF,Pix,1141.4,0
+991,2024-06-20,Tinto,Malbec Premium,2013,292.68,1,0.0,E-commerce,Sul,PF,Pix,292.68,0
+992,2025-06-23,Tinto,Merlot Classico,2013,191.48,5,0.0,Distribuidor,Sudeste,PF,Credito,957.4,0
+993,2025-03-30,Tinto,Merlot Classico,2015,89.06,9,0.15,E-commerce,Sudeste,PF,Boleto,681.31,1
+994,2025-08-02,Tinto,Tannat Especial,2006,153.65,7,0.15,E-commerce,Sudeste,PJ,Credito,914.22,1
+995,2024-07-14,Espumante,Moscatel Doce,2019,164.73,9,0.1,Distribuidor,Sul,PF,Credito,1334.31,1
+996,2026-04-26,Tinto,Merlot Classico,2017,116.27,3,0.05,Distribuidor,Sudeste,PF,Debito,331.37,1
+997,2025-01-18,Tinto,Tannat Especial,2008,247.5,1,0.0,Loja Fisica,Norte,PF,Credito,247.5,1
+998,2024-03-21,Branco,Riesling Doce,2017,219.69,6,0.0,Eventos,Sudeste,PF,Credito,1318.14,1
+999,2024-01-11,Tinto,Merlot Classico,2019,299.85,7,0.0,Eventos,Sul,PF,Boleto,2098.95,1
+1000,2024-10-22,Tinto,Malbec Premium,2007,124.64,1,0.0,Loja Fisica,Sudeste,PF,Credito,124.64,1

@@ -1,0 +1,16 @@
+feature,importance
+num__valor_total,0.24003136670486125
+num__preco_unitario,0.19768153802660784
+num__safra,0.19064067586388433
+cat__forma_pagamento_Debito,0.1592368382464745
+cat__canal_Eventos,0.10258406425138088
+num__quantidade,0.03277231965929506
+cat__canal_Loja Fisica,0.030343905081187866
+cat__forma_pagamento_Boleto,0.022511685973232692
+num__desconto_aplicado,0.012427670511725483
+cat__regiao_cliente_Sudeste,0.011769935681350171
+cat__tipo_cliente_PJ,0.0
+cat__forma_pagamento_Pix,0.0
+cat__forma_pagamento_Credito,0.0
+cat__tipo_vinho_Branco,0.0
+cat__tipo_cliente_PF,0.0
