@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <title>Vinheria Agnello — Fase 4</title>
+  <style>
+    @page { margin: 2.5cm; }
+    body {
+      font-family: Arial, sans-serif;
+      color: #222;
+      font-size: 11pt;
+      line-height: 1.5;
+    }
+    h1, h2, h3 { color: #5c0a1e; }
+    h1 { font-size: 22pt; text-align: center; }
+    h2 { font-size: 16pt; border-bottom: 1px solid #c5a059; padding-bottom: 4px; }
+    h3 { font-size: 13pt; }
+    p { text-align: justify; }
+    .capa {
+      text-align: center;
+      margin-top: 130px;
+      page-break-after: always;
+    }
+    .capa p { text-align: center; }
+    .titulo { font-size: 26pt; color: #5c0a1e; font-weight: bold; }
+    .subtitulo { font-size: 16pt; color: #8a6b32; }
+    .page-break { page-break-before: always; }
+    .placeholder {
+      border: 2px dashed #999;
+      background: #f5f5f5;
+      padding: 28px 16px;
+      margin: 14px 0 4px;
+      text-align: center;
+      color: #555;
+      font-weight: bold;
+    }
+    .legenda {
+      text-align: center;
+      font-size: 9pt;
+      color: #555;
+      margin-bottom: 16px;
+    }
+    pre {
+      background: #f4f1ec;
+      border-left: 4px solid #c5a059;
+      padding: 10px;
+      font-family: "Courier New", monospace;
+      font-size: 8.5pt;
+      white-space: pre-wrap;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 12px 0;
+    }
+    th, td { border: 1px solid #aaa; padding: 7px; }
+    th { background: #5c0a1e; color: white; }
+    .aviso {
+      background: #fff5d6;
+      border: 1px solid #c5a059;
+      padding: 10px;
+    }
+    a { color: #5c0a1e; }
+  </style>
+</head>
+<body>
+  <section class="capa">
+    <div class="titulo">FIAP</div>
+    <p class="subtitulo">Projeto Vinheria Agnello</p>
+    <h1>Fase 4 — Persistência de Dados para Controle de Estoque</h1>
+    <p><strong>Integrantes:</strong></p>
+    <p>[NOME COMPLETO — RM XXXXX]</p>
+    <p>[NOME COMPLETO — RM XXXXX]</p>
+    <p>[NOME COMPLETO — RM XXXXX]</p>
+    <p style="margin-top:100px">São Paulo<br>2026</p>
+  </section>
+
+  <h2>1. Introdução</h2>
+  <p>
+    A Vinheria Agnello iniciou sua transformação digital com a definição do
+    problema de negócio e da experiência desejada para seus clientes. Nas fases
+    anteriores foram desenvolvidos o conceito do e-commerce, as interfaces web,
+    um catálogo conectado a banco de dados e uma análise preditiva de vendas.
+    A quarta fase amplia esse ecossistema por meio de um controle de estoque
+    persistente, capaz de armazenar os produtos mesmo depois que a aplicação é
+    encerrada.
+  </p>
+  <p>
+    A persistência é essencial porque o estoque representa o estado operacional
+    da vinheria. Informações como nome do vinho, safra, origem, preço e
+    quantidade disponível não podem depender apenas da memória temporária do
+    programa. Sem armazenamento permanente, os dados seriam perdidos a cada
+    reinicialização, comprometendo consultas, reposição de itens e decisões de
+    venda.
+  </p>
+  <p>
+    A solução foi dividida em dois módulos independentes. O primeiro é um
+    aplicativo Android escrito em Kotlin, com interface Jetpack Compose e banco
+    local Room. O segundo é uma aplicação console em C#, com repositório que
+    serializa os produtos em um arquivo JSON. Os dois módulos implementam as
+    operações Create, Read, Update e Delete, conhecidas pela sigla CRUD.
+  </p>
+
+  <h2>2. Modelo de produto</h2>
+  <p>
+    Os módulos utilizam o mesmo conceito de produto para manter coerência com o
+    catálogo da Vinheria Agnello. A tabela a seguir descreve os atributos.
+  </p>
+  <table>
+    <tr><th>Campo</th><th>Finalidade</th></tr>
+    <tr><td>id</td><td>Identificador único gerado pelo mecanismo de persistência.</td></tr>
+    <tr><td>nome</td><td>Nome comercial do vinho ou item de estoque.</td></tr>
+    <tr><td>tipo</td><td>Categoria, como Tinto, Branco, Rosé ou Espumante.</td></tr>
+    <tr><td>safra</td><td>Ano da produção do vinho.</td></tr>
+    <tr><td>quantidade</td><td>Número de unidades disponíveis.</td></tr>
+    <tr><td>preço</td><td>Valor unitário de venda.</td></tr>
+    <tr><td>origem</td><td>País ou região de procedência.</td></tr>
+    <tr><td>descrição</td><td>Observações complementares sobre o produto.</td></tr>
+  </table>
+
+  <div class="page-break"></div>
+  <h2>3. Módulo Android com Room</h2>
+  <h3>3.1 Room e arquitetura adotada</h3>
+  <p>
+    Room é uma biblioteca do Android Jetpack que fornece uma camada de abstração
+    sobre o SQLite. Ela permite representar tabelas por meio de classes Kotlin,
+    validar consultas SQL durante a compilação e concentrar o acesso aos dados
+    em interfaces DAO. A solução possui entidade, DAO, banco, repositório,
+    ViewModel e interface Compose. Essa separação reduz o acoplamento entre a
+    tela e o armazenamento.
+  </p>
+
+  <h3>3.2 Configuração</h3>
+  <pre>implementation("androidx.room:room-runtime:2.8.4")
+implementation("androidx.room:room-ktx:2.8.4")
+ksp("androidx.room:room-compiler:2.8.4")</pre>
+  <div class="placeholder">[INSERIR PRINT REAL 1 — ESTRUTURA DO PROJETO ANDROID]</div>
+  <p class="legenda">Figura 1 — Estrutura dos pacotes do módulo Android.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 2 — DEPENDÊNCIAS ROOM E KSP]</div>
+  <p class="legenda">Figura 2 — Dependências necessárias para utilizar Room.</p>
+
+  <h3>3.3 Entidade Produto</h3>
+  <pre>@Entity(tableName = "produtos")
+data class Produto(
+    @PrimaryKey(autoGenerate = true) val id: Int = 0,
+    val nome: String,
+    val tipo: String,
+    val safra: Int,
+    val quantidade: Int,
+    val preco: Double,
+    val origem: String,
+    val descricao: String,
+)</pre>
+  <p>
+    A anotação <code>@Entity</code> transforma a classe em uma tabela. A chave
+    primária é gerada automaticamente para evitar colisões de identificadores.
+  </p>
+  <div class="placeholder">[INSERIR PRINT REAL 3 — ARQUIVO Produto.kt]</div>
+  <p class="legenda">Figura 3 — Entidade que representa a tabela de produtos.</p>
+
+  <h3>3.4 DAO e operações CRUD</h3>
+  <pre>@Dao
+interface ProdutoDao {
+    @Query("SELECT * FROM produtos ORDER BY nome ASC")
+    fun observarTodos(): Flow&lt;List&lt;Produto&gt;&gt;
+
+    @Query("SELECT * FROM produtos WHERE id = :id LIMIT 1")
+    suspend fun buscarPorId(id: Int): Produto?
+
+    @Insert suspend fun inserir(produto: Produto): Long
+    @Update suspend fun atualizar(produto: Produto): Int
+    @Delete suspend fun excluir(produto: Produto): Int
+}</pre>
+  <p>
+    O DAO reúne as quatro operações exigidas. A listagem retorna um
+    <code>Flow</code>, fazendo a interface reagir automaticamente sempre que o
+    conteúdo do banco muda. As operações de escrita são suspensas para não
+    bloquear a interface do aplicativo.
+  </p>
+  <div class="placeholder">[INSERIR PRINT REAL 4 — ARQUIVO ProdutoDao.kt]</div>
+  <p class="legenda">Figura 4 — Métodos de acesso e modificação dos dados.</p>
+
+  <h3>3.5 Banco local</h3>
+  <pre>@Database(entities = [Produto::class], version = 1)
+abstract class AgnelloDatabase : RoomDatabase() {
+    abstract fun produtoDao(): ProdutoDao
+}</pre>
+  <p>
+    O banco é instanciado como singleton com o nome
+    <code>agnello_estoque.db</code>. Assim, a aplicação reutiliza uma única
+    conexão durante seu ciclo de vida.
+  </p>
+  <div class="placeholder">[INSERIR PRINT REAL 5 — ARQUIVO AgnelloDatabase.kt]</div>
+  <p class="legenda">Figura 5 — Configuração do banco Room.</p>
+
+  <div class="page-break"></div>
+  <h3>3.6 Integração e demonstração do CRUD</h3>
+  <p>
+    O repositório encapsula o DAO e o ViewModel executa as alterações em
+    coroutines. A tela apresenta uma lista, um botão de inclusão, formulário de
+    cadastro/edição e confirmação antes da exclusão. Os campos obrigatórios,
+    safra, quantidade e preço são validados antes da gravação.
+  </p>
+  <div class="placeholder">[INSERIR PRINT REAL 6 — LISTA INICIAL VAZIA]</div>
+  <p class="legenda">Figura 6 — Estado inicial do estoque.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 7 — FORMULÁRIO PREENCHIDO]</div>
+  <p class="legenda">Figura 7 — Operação Create antes da confirmação.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 8 — PRODUTO NA LISTA]</div>
+  <p class="legenda">Figura 8 — Operação Read exibindo o produto persistido.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 9 — PRODUTO ATUALIZADO]</div>
+  <p class="legenda">Figura 9 — Operação Update após alterar a quantidade.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 10 — CONFIRMAÇÃO DE EXCLUSÃO]</div>
+  <p class="legenda">Figura 10 — Confirmação da operação Delete.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 11 — LISTA APÓS EXCLUSÃO]</div>
+  <p class="legenda">Figura 11 — Resultado da remoção do produto.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 12 — DADO APÓS REABRIR O APP]</div>
+  <p class="legenda">Figura 12 — Evidência de persistência após reinicialização.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 13 — TESTES E BUILD ANDROID]</div>
+  <p class="legenda">Figura 13 — Resultado dos testes e compilação Android.</p>
+
+  <div class="page-break"></div>
+  <h2>4. Módulo de persistência em C#</h2>
+  <h3>4.1 Escolha da abordagem</h3>
+  <p>
+    O módulo C# utiliza um arquivo JSON porque essa abordagem demonstra
+    persistência real sem exigir servidor, banco externo ou pacote adicional.
+    A biblioteca <code>System.Text.Json</code> faz parte da plataforma .NET e
+    converte objetos C# para uma representação textual estruturada. A solução
+    continua extensível: a interface do repositório permite substituir o JSON
+    por SQLite ou Entity Framework no futuro sem alterar o menu.
+  </p>
+
+  <h3>4.2 Classe Produto e contrato do repositório</h3>
+  <pre>public sealed class Produto
+{
+    public int Id { get; set; }
+    public string Nome { get; set; } = string.Empty;
+    public string Tipo { get; set; } = string.Empty;
+    public int Safra { get; set; }
+    public int Quantidade { get; set; }
+    public decimal Preco { get; set; }
+    public string Origem { get; set; } = string.Empty;
+    public string Descricao { get; set; } = string.Empty;
+}</pre>
+  <pre>public interface IProdutoRepository
+{
+    IReadOnlyList&lt;Produto&gt; Listar();
+    Produto? BuscarPorId(int id);
+    Produto Cadastrar(Produto produto);
+    bool Atualizar(Produto produto);
+    bool Excluir(int id);
+}</pre>
+  <div class="placeholder">[INSERIR PRINT REAL 14 — ESTRUTURA DO PROJETO C#]</div>
+  <p class="legenda">Figura 14 — Organização do módulo C#.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 15 — CLASSE Produto.cs]</div>
+  <p class="legenda">Figura 15 — Modelo de produto em C#.</p>
+
+  <h3>4.3 Repositório JSON</h3>
+  <p>
+    Ao iniciar, o repositório cria a pasta e o arquivo quando necessário. As
+    operações de cadastro, atualização e exclusão chamam o método de gravação
+    imediatamente. O arquivo é escrito primeiro com extensão temporária e depois
+    substitui o original, reduzindo o risco de conteúdo parcialmente gravado.
+    Um JSON inválido gera uma mensagem explícita em vez de apagar silenciosamente
+    os dados.
+  </p>
+  <div class="placeholder">[INSERIR PRINT REAL 16 — JsonProdutoRepository.cs]</div>
+  <p class="legenda">Figura 16 — Carregamento e gravação dos produtos em JSON.</p>
+
+  <h3>4.4 Menu e CRUD</h3>
+  <p>
+    A aplicação oferece opções numeradas para cadastrar, listar, consultar,
+    atualizar e excluir. As entradas numéricas são verificadas e a exclusão
+    exige confirmação. O mesmo conjunto de regras do Android é aplicado aos
+    campos do produto.
+  </p>
+  <div class="placeholder">[INSERIR PRINT REAL 17 — CADASTRO E LISTAGEM NO TERMINAL]</div>
+  <p class="legenda">Figura 17 — Operações Create e Read no módulo C#.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 18 — ATUALIZAÇÃO NO TERMINAL]</div>
+  <p class="legenda">Figura 18 — Operação Update no módulo C#.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 19 — produtos.json]</div>
+  <p class="legenda">Figura 19 — Dados serializados no arquivo JSON.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 20 — NOVA EXECUÇÃO COM DADOS]</div>
+  <p class="legenda">Figura 20 — Persistência comprovada após encerrar e reiniciar.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 21 — EXCLUSÃO E LISTA VAZIA]</div>
+  <p class="legenda">Figura 21 — Operação Delete concluída.</p>
+  <div class="placeholder">[INSERIR PRINT REAL 22 — BUILD E AUTOTESTE C#]</div>
+  <p class="legenda">Figura 22 — Compilação e autoteste do módulo C#.</p>
+
+  <h2>5. Comparação das soluções</h2>
+  <table>
+    <tr><th>Aspecto</th><th>Android Room</th><th>C# JSON</th></tr>
+    <tr><td>Armazenamento</td><td>Banco SQLite local</td><td>Arquivo textual local</td></tr>
+    <tr><td>Estrutura</td><td>Entidade, DAO e banco</td><td>Modelo e repositório</td></tr>
+    <tr><td>Consulta reativa</td><td>Flow atualiza a tela</td><td>Leitura sob demanda</td></tr>
+    <tr><td>Dependências</td><td>Biblioteca AndroidX Room</td><td>System.Text.Json nativo</td></tr>
+    <tr><td>Uso adequado</td><td>Aplicativo mobile com dados estruturados</td><td>Demonstração local simples e portátil</td></tr>
+  </table>
+
+  <h2>6. Conclusão</h2>
+  <p>
+    A fase 4 introduz persistência de dados no controle de estoque da Vinheria
+    Agnello. O módulo Android usa Room para oferecer um banco local estruturado,
+    com atualização reativa da interface. O módulo C# aplica o padrão de
+    repositório e salva os produtos em JSON. Em ambos os casos, o CRUD permite
+    cadastrar novos itens, consultar o estoque, corrigir informações e remover
+    registros que deixaram de ser utilizados.
+  </p>
+  <p>
+    Essas funcionalidades reduzem o risco de perda de informações e formam uma
+    base técnica para evoluções futuras, como sincronização com o e-commerce,
+    controle de entradas e saídas, alertas de estoque mínimo e integração com
+    relatórios de vendas. A separação em camadas também facilita testes e a
+    substituição do mecanismo de armazenamento quando o projeto crescer.
+  </p>
+
+  <h2>7. Referências</h2>
+  <p>
+    ANDROID DEVELOPERS. <em>Save data in a local database using Room</em>.
+    Disponível em:
+    <a href="https://developer.android.com/training/data-storage/room">developer.android.com/training/data-storage/room</a>.
+    Acesso em: 20 jun. 2026.
+  </p>
+  <p>
+    ANDROID DEVELOPERS. <em>Room release notes</em>. Disponível em:
+    <a href="https://developer.android.com/jetpack/androidx/releases/room">developer.android.com/jetpack/androidx/releases/room</a>.
+    Acesso em: 20 jun. 2026.
+  </p>
+  <p>
+    MICROSOFT. <em>How to serialize and deserialize JSON in C#</em>.
+    Disponível em:
+    <a href="https://learn.microsoft.com/dotnet/standard/serialization/system-text-json/how-to">learn.microsoft.com/dotnet/standard/serialization/system-text-json/how-to</a>.
+    Acesso em: 20 jun. 2026.
+  </p>
+
+  <p class="aviso">
+    <strong>Antes da entrega:</strong> substitua os nomes e RMs da capa, insira
+    exclusivamente screenshots reais nos espaços indicados, atualize as legendas
+    e remova todos os avisos de pendência.
+  </p>
+</body>
+</html>
