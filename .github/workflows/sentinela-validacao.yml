@@ -1,0 +1,39 @@
+name: Validar Sentinela
+on:
+  push:
+    branches: [codex/sentinela-validacao]
+permissions:
+  contents: read
+jobs:
+  teste:
+    runs-on: ubuntu-latest
+    timeout-minutes: 12
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+          cache: maven
+      - name: Compilar e iniciar
+        working-directory: 2026/global-solution/api
+        env:
+          ALERTA_ADMIN_EMAIL: admin@example.test
+          ALERTA_ADMIN_PASSWORD: EscolhaUmaSenhaForte123
+        run: |
+          mvn -B package
+          java -jar target/cidadania-alerta-1.0.0.jar > /tmp/sentinela-server.log 2>&1 &
+          for i in $(seq 1 60); do
+            if curl -fsS http://localhost:8080/ > /dev/null; then exit 0; fi
+            sleep 2
+          done
+          cat /tmp/sentinela-server.log
+          exit 1
+      - name: Testar API e banco
+        working-directory: 2026/global-solution
+        run: |
+          python3 testes/test_banco.py
+          python3 testes/test_api.py
+      - name: Log da aplicação
+        if: always()
+        run: cat /tmp/sentinela-server.log || true
