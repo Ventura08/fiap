@@ -17,7 +17,9 @@ def request(path, method='GET', data=None, token=None):
             return response.status, json.loads(raw) if raw else None
     except HTTPError as error:
         raw=error.read()
-        return error.code, json.loads(raw) if raw else None
+        code=error.code
+        error.close()
+        return code, json.loads(raw) if raw else None
 
 class ApiTest(unittest.TestCase):
     @classmethod

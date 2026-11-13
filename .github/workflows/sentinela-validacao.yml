@@ -34,6 +34,11 @@ jobs:
         run: |
           python3 testes/test_banco.py
           python3 testes/test_api.py
+      - name: Testar interface mobile
+        working-directory: 2026/global-solution
+        run: |
+          npm install --no-save playwright@1.55.0
+          node testes/test_mobile.cjs
       - name: Log da aplicação
         if: always()
         run: cat /tmp/sentinela-server.log || true
